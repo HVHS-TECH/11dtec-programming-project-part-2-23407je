@@ -67,7 +67,7 @@ if (timer1 >= 30) {
     console.log("30 seconds passed. Rental ended.");
     Cash = Cash + 25
   }
-  if (truechecking == 1 && herotimer == 1) {
+  if (herotimer == 1) {
         intervalID = 0;
         timer2 = timer2 + 1
     }
