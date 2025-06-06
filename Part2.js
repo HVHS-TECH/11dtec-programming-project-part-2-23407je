@@ -4,6 +4,7 @@ Rental Josh 16/05/25
 console.log("Welcome to the part 2 project");
 var timer = 0;
 var PokerTimer = 0;
+var herotimer = 0;
 var hero1 = 0;
 var hero2 = 0;
 var hero3 =0;
