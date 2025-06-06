@@ -68,3 +68,21 @@ function poker() {
     }
     
 }
+function heropack1function() {
+    if ( >= 2) {
+        truechecking = 0;
+        PokerTimer = 0;
+        console.log("you can only rent one item at a time")
+        timer = 0;
+    }
+    if (Cash >= 20 && PokerTimer <= 1) {
+        intervalID = 0;
+        truechecking = truechecking + 1
+    PokerTimer = PokerTimer + 1
+    Cash = Cash - 20
+    console.log("thank you for your purchase you may buy again after 30 seconds")
+    } else {
+        console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
+    }
+    
+}
