@@ -47,7 +47,7 @@ console.log(Cash);
 
 //timerintervals
 let intervalID = setInterval(() => {
-  if (truechecking == 1) {
+  if (truechecking == 1 || herotimer == 1) {
     timeRenting();
   }
 }, 1000);
@@ -95,7 +95,6 @@ function poker() {
 }
 function heropack1function() {
     if (herotimer >= 2) {
-        truechecking = 0;
         herotimer = 0;
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
