@@ -94,10 +94,9 @@ function poker() {
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
-    
 }
 function heropack1function() {
-    if (Cash >= 500 && herotimer >> 1) {
+    if (Cash >= 500) {
         truechecking = 0;
         herotimer = 0;
         console.log("you can only rent one of this hero at a time")
