@@ -100,8 +100,8 @@ function heropack1function() {
     if (Cash >= 500) {
         truechecking = 0;
         PokerTimer = 0;
-        console.log("you can only rent one item at a time")
-        timer = 0;
+        console.log("you can only rent one of this hero at a time")
+        timer2 = 0;
     }
     if (Cash >= 20 && PokerTimer <= 1) {
         intervalID = 0;
