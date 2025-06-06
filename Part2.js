@@ -56,7 +56,6 @@ let intervalID = setInterval(() => {
 ****************************/
 function timeRenting() {
     if (truechecking == 1 && PokerTimer == 1) {
-        intervalID = 0;
         timer1 = timer1 + 1
         console.log(timer1,"second")
     }
@@ -68,7 +67,6 @@ if (timer1 >= 30) {
     Cash = Cash + 25
   }
   if (herotimer >= 1) {
-        intervalID = 0;
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
     }
