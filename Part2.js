@@ -73,7 +73,6 @@ if (timer1 >= 30) {
         console.log("test seconds", timer2);
     }
 if (timer2 >= 84400) {
-    truechecking = 0;
     herotimer = 0;
     timer2 = 0
     console.log("1 day passed. Rental ended.");
