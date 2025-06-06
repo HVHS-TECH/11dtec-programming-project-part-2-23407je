@@ -58,7 +58,7 @@ function timeRenting() {
     if (truechecking == 1 && PokerTimer == 1) {
         intervalID = 0;
         timer1 = timer1 + 1
-        console.log(timer,"second")
+        console.log(timer1,"second")
     }
 if (timer1 >= 30) {
     truechecking = 0;
