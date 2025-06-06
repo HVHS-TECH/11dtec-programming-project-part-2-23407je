@@ -97,7 +97,7 @@ function poker() {
     }
 }
 function heropack1function() {
-    if (herotimer >= 1) {
+    if (herotimer >= 2) {
         truechecking = 0;
         herotimer = 0;
         console.log("you can only rent one of this hero at a time")
