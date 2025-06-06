@@ -2,20 +2,38 @@
 Rental Josh 16/05/25
 ****************************/
 console.log("Welcome to the part 2 project");
-var timer = 0;
+var timer1 = 0;
+var timer2 = 0;
 var PokerTimer = 0;
 var herotimer = 0;
 var hero1 = 0;
 var hero2 = 0;
-var hero3 =0;
-var heropack1 = 0;
-let heropack1open = ["hero1pack1", "hero2pack1", "hero3pack1", "hero4pack1", "hero5pack1"]
-var heropack2 = 0;
-let heropack2open = ["hero1pack2", "hero2pack2", "hero3pack2", "hero4pack3", "hero5pack2"]
-var heropack3 = 0;
-let heropack3open = ["hero1pack3", "hero2pack3", "hero3pack3", "hero4pack3", "hero5pack3"]
-var heropack4 = 0;
-let heropack4open = ["hero1pack4", "hero2pack4", "hero3pack4", "hero4pack4", "hero5pack4"]
+var hero3 = 0;
+var hero1pack1 = 0;
+var hero2pack1 = 0;
+var hero3pack1 = 0;
+var hero4pack1 = 0;
+var hero5pack1 = 0;
+var hero1pack2 = 0;
+var hero2pack2 = 0;
+var hero3pack2 = 0;
+var hero4pack2 = 0;
+var hero5pack2 = 0;
+var hero1pack3 = 0;
+var hero2pack3 = 0;
+var hero3pack3 = 0;
+var hero4pack3 = 0;
+var hero5pack3 = 0;
+var hero1pack4 = 0;
+var hero2pack4 = 0;
+var hero3pack4 = 0;
+var hero4pack4 = 0;
+var hero5pack4 = 0;
+var hero1pack5 = 0;
+var hero2pack5 = 0;
+var hero3pack5 = 0;
+var hero4pack5 = 0;
+var hero5pack5 = 0;
 var Cash = 0;
 var truechecking = 0;
 
@@ -39,15 +57,25 @@ let intervalID = setInterval(() => {
 function timeRenting() {
     if (truechecking == 1 && PokerTimer == 1) {
         intervalID = 0;
-        timer = timer + 1
+        timer1 = timer1 + 1
         console.log(timer,"second")
     }
-if (timer >= 30) {
+if (timer1 >= 30) {
     truechecking = 0;
     PokerTimer = 0;
-    timer = 0
+    timer1 = 0
     console.log("30 seconds passed. Rental ended.");
     Cash = Cash + 25
+  }
+  if (truechecking == 1 && herotimer == 1) {
+        intervalID = 0;
+        timer2 = timer2 + 1
+    }
+if (timer2 >= 84400) {
+    truechecking = 0;
+    herotimer = 0;
+    timer2 = 0
+    console.log("1 day passed. Rental ended.");
   }
 }
 function poker() {
@@ -55,7 +83,7 @@ function poker() {
         truechecking = 0;
         PokerTimer = 0;
         console.log("you can only rent one item at a time")
-        timer = 0;
+        timer1 = 0;
     }
     if (Cash >= 20 && PokerTimer <= 1) {
         intervalID = 0;
@@ -69,7 +97,7 @@ function poker() {
     
 }
 function heropack1function() {
-    if ( >= 2) {
+    if (Cash >= 500) {
         truechecking = 0;
         PokerTimer = 0;
         console.log("you can only rent one item at a time")
