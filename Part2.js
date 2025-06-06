@@ -41,7 +41,7 @@ var truechecking = 0;
  Main code
 ****************************/
 function start() {
-Cash = Cash + 1;
+Cash = Cash + 9999;
 console.log(Cash);
 }
 
@@ -70,6 +70,7 @@ if (timer1 >= 30) {
   if (herotimer == 1) {
         intervalID = 0;
         timer2 = timer2 + 1
+        console.log("test seconds", timer2)
     }
 if (timer2 >= 84400) {
     truechecking = 0;
@@ -96,16 +97,17 @@ function poker() {
     }
 }
 function heropack1function() {
-    if (Cash >= 500) {
+    if (herotimer >= 1) {
         truechecking = 0;
         herotimer = 0;
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
     }
-    if (Cash >= 500 && herotimer <= 1) {
+    if (Cash >= 500) {
         intervalID = 0;
     herotimer = herotimer + 1
     Cash = Cash - 500
+    console.log("you have bought hero pack 1")
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
