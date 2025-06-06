@@ -67,7 +67,7 @@ if (timer1 >= 30) {
     console.log("30 seconds passed. Rental ended.");
     Cash = Cash + 25
   }
-  if (herotimer == 1) {
+  if (herotimer >= 1) {
         intervalID = 0;
         timer2 = timer2 + 1
         console.log("test seconds", timer2)
@@ -103,7 +103,7 @@ function heropack1function() {
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
     }
-    if (Cash >= 500) {
+    if (Cash >= 500 && herotimer <= 1) {
         intervalID = 0;
     herotimer = herotimer + 1
     Cash = Cash - 500
