@@ -97,20 +97,18 @@ function poker() {
     
 }
 function heropack1function() {
-    if (Cash >= 500) {
+    if (Cash >= 500 && herotimer >> 1) {
         truechecking = 0;
-        PokerTimer = 0;
+        herotimer = 0;
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
     }
-    if (Cash >= 20 && PokerTimer <= 1) {
+    if (Cash >= 500 && PokerTimer <= 1) {
         intervalID = 0;
         truechecking = truechecking + 1
-    PokerTimer = PokerTimer + 1
-    Cash = Cash - 20
-    console.log("thank you for your purchase you may buy again after 30 seconds")
+    herotimer = herotimer + 1
+    Cash = Cash - 500
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
-    
 }
