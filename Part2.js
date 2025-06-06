@@ -70,7 +70,7 @@ if (timer1 >= 30) {
   if (herotimer >= 1) {
         intervalID = 0;
         timer2 = timer2 + 1
-        console.log("test seconds", timer2)
+        console.log("test seconds", timer2);
     }
 if (timer2 >= 84400) {
     truechecking = 0;
