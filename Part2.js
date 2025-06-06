@@ -100,7 +100,7 @@ function heropack1function() {
         truechecking = 0;
         herotimer = 0;
         console.log("you can only rent one of this hero at a time")
-        timer2 = 0;+
+        timer2 = 0;
     }
     if (Cash >= 500 && herotimer <= 1) {
         intervalID = 0;
