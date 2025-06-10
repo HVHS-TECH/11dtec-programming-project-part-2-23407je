@@ -111,7 +111,7 @@ if (timer2 >= 10) {
     }
     if (timer3 >= 10) {
     herotimer2 = 0;
-    timer2 = 0
+    timer3 = 0
     console.log("1 day passed. Rental ended.");
     console.log("Badge collected: Grassless life")
     spinfunction2 = spinfunction2 * 100
