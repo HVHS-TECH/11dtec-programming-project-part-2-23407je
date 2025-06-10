@@ -50,7 +50,7 @@ console.log(Cash);
 
 //timerintervals
 let intervalID = setInterval(() => {
-  if (truechecking == 1 || herotimer == 1) {
+  if (truechecking == 1 || herotimer == 1 || heropacktimer2 == 1) {
     timeRenting();
   }
 }, 1000);
