@@ -122,22 +122,22 @@ if (timer2 >= 10) {
     }
       if (spinfunction2 > 1 && spinfunction2 <= 6) {
         hero4pack2 = hero4pack2 + 1
-        spinfunction = 0
+        spinfunction2 = 0
          console.log("You got the 5% chance hero Hero 4");
     }
       if (spinfunction2 > 6 && spinfunction2 <= 16) {
         hero3pack2 = hero3pack2 + 1
-        spinfunction = 0
+        spinfunction2 = 0
          console.log("You got the 10% chance hero Hero 3");
     }
   if (spinfunction2 > 16 && spinfunction2 <= 40) {
         hero2pack2 = hero2pack2 + 1
-        spinfunction = 0
+        spinfunction2 = 0
          console.log("You got the 24% chance hero Hero 2");
     }
       if (spinfunction2 > 30) {
         hero1pack2 = hero1pack2 + 1
-        spinfunction = 0
+        spinfunction2 = 0
         console.log("You got the 60% chance hero Hero 1");
     }
 }
