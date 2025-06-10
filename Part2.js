@@ -106,7 +106,7 @@ if (timer2 >= 10) {
     }
     if (herotimer2 >= 1) {
         timer3 = timer3 + 1
-        console.log("hero second", timer3)
+        console.log("hero second", timer3);
     }
     if (timer3 >= 10) {
     herotimer2 = 0;
