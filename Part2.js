@@ -104,6 +104,7 @@ if (timer2 >= 10) {
         spinfunction = 0
         console.log("You got the 60% chance hero Hero 1");
     }
+}
     if (herotimer2 >= 1) {
         timer3 = timer3 + 1
         console.log("hero second", timer3);
@@ -139,7 +140,6 @@ if (timer2 >= 10) {
         spinfunction = 0
         console.log("You got the 60% chance hero Hero 1");
     }
-}
 }
 }
 function poker() {
