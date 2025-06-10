@@ -107,7 +107,7 @@ if (timer2 >= 10) {
 }
     if (heropacktimer2 >= 1) {
         timer3 = timer3 + 1
-        console.log("hero second");
+        console.log("hero second", timer3);
     }
     if (timer3 >= 10) {
     heropacktimer2 = 0;
@@ -118,27 +118,27 @@ if (timer2 >= 10) {
     if (spinfunction2 <= 1) {
         hero5pack2 = hero5pack2 + 1
         spinfunction2 = 0
-         console.log("You got the 1% chance hero Hero 5 CONGRATULATIONS");
+         console.log("You got the 1% chance Hero 5 pack 2 CONGRATULATIONS");
     }
       if (spinfunction2 > 1 && spinfunction2 <= 6) {
         hero4pack2 = hero4pack2 + 1
         spinfunction2 = 0
-         console.log("You got the 5% chance hero Hero 4");
+         console.log("You got the 5% chance Hero 4 pack 2");
     }
       if (spinfunction2 > 6 && spinfunction2 <= 16) {
         hero3pack2 = hero3pack2 + 1
         spinfunction2 = 0
-         console.log("You got the 10% chance hero Hero 3");
+         console.log("You got the 10% chance Hero 3 Pack 2");
     }
   if (spinfunction2 > 16 && spinfunction2 <= 40) {
         hero2pack2 = hero2pack2 + 1
         spinfunction2 = 0
-         console.log("You got the 24% chance hero Hero 2");
+         console.log("You got the 24% chance Hero 2 pack 2");
     }
       if (spinfunction2 > 30) {
         hero1pack2 = hero1pack2 + 1
         spinfunction2 = 0
-        console.log("You got the 60% chance hero Hero 1");
+        console.log("You got the 60% chance Hero 1 pack 2");
     }
 }
 }
