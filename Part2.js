@@ -7,7 +7,7 @@ var timer2 = 0;
 var timer3 = 0;
 var PokerTimer = 0;
 var herotimer = 0;
-var herotimer2 = 0;
+var heropacktimer2 = 0;
 var hero1 = 0;
 var hero2 = 0;
 var hero3 = 0;
@@ -105,12 +105,12 @@ if (timer2 >= 10) {
         console.log("You got the 60% chance hero Hero 1");
     }
 }
-    if (herotimer2 >= 1) {
+    if (heropacktimer2 >= 1) {
         timer3 = timer3 + 1
         console.log("hero second", timer3);
     }
     if (timer3 >= 10) {
-    herotimer2 = 0;
+    heropacktimer2 = 0;
     timer3 = 0
     console.log("1 day passed. Rental ended.");
     console.log("Badge collected: Grassless life")
@@ -176,14 +176,14 @@ function heropack1function() {
     }
 }
 function heropack2function() {
-    if (herotimer2 > 1) {
-        herotimer2 = 0;
+    if (heropacktimer2 > 1) {
+        heropacktimer2 = 0;
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
     }
     if (Cash >= 5000 && herotimer2 <= 1) {
         intervalID = 0;
-    herotimer2 = herotimer2 + 1
+    heropacktimer2 = heropacktimer2 + 1
     Cash = Cash - 5000
     console.log("you have bought hero pack 2")
     spinfunction2 = Math.random();
