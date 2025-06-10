@@ -179,9 +179,9 @@ function heropack2function() {
     if (heropacktimer2 > 1) {
         heropacktimer2 = 0;
         console.log("you can only rent one of this hero at a time")
-        timer2 = 0;
+        timer3 = 0;
     }
-    if (Cash >= 5000 && herotimer2 <= 1) {
+    if (Cash >= 5000 && heropacktimer2 <= 1) {
         intervalID = 0;
     heropacktimer2 = heropacktimer2 + 1
     Cash = Cash - 5000
