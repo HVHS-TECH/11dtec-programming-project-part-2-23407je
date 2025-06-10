@@ -103,6 +103,38 @@ if (timer2 >= 10) {
         spinfunction = 0
         console.log("You got the 60% chance hero Hero 1");
     }
+    if (timer3 >= 10) {
+    herotimer = 0;
+    timer2 = 0
+    console.log("1 day passed. Rental ended.");
+    console.log("Badge collected: Grassless life")
+    spinfunction = spinfunction * 100
+    if (spinfunction <= 1) {
+        hero5pack1 = hero5pack1 + 1
+        spinfunction = 0
+         console.log("You got the 1% chance hero Hero 5 CONGRATULATIONS");
+    }
+      if (spinfunction > 1 && spinfunction <= 6) {
+        hero4pack1 = hero4pack1 + 1
+        spinfunction = 0
+         console.log("You got the 5% chance hero Hero 4");
+    }
+      if (spinfunction > 6 && spinfunction <= 16) {
+        hero3pack1 = hero3pack1 + 1
+        spinfunction = 0
+         console.log("You got the 10% chance hero Hero 3");
+    }
+  if (spinfunction > 16 && spinfunction <= 40) {
+        hero2pack1 = hero2pack1 + 1
+        spinfunction = 0
+         console.log("You got the 24% chance hero Hero 2");
+    }
+      if (spinfunction > 30) {
+        hero1pack1 = hero1pack1 + 1
+        spinfunction = 0
+        console.log("You got the 60% chance hero Hero 1");
+    }
+}
 }
 }
 function poker() {
