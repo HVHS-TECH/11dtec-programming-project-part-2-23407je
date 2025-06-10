@@ -147,7 +147,7 @@ function heropack2function() {
     if (Cash >= 500 && herotimer2 <= 1) {
         intervalID = 0;
     herotimer2 = herotimer2 + 1
-    Cash = Cash - 500
+    Cash = Cash - 5000
     console.log("you have bought hero pack 1")
     spinfunction = Math.random();
     } else {
