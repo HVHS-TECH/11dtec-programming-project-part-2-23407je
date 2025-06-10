@@ -7,6 +7,7 @@ var timer2 = 0;
 var PokerTimer = 0;
 var herotimer = 0;
 var herotimer2 = 0;
+var herofuntion2 = 0;
 var hero1 = 0;
 var hero2 = 0;
 var hero3 = 0;
