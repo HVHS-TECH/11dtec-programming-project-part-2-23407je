@@ -6,6 +6,7 @@ var timer1 = 0;
 var timer2 = 0;
 var PokerTimer = 0;
 var herotimer = 0;
+var herotimer2 = 0;
 var hero1 = 0;
 var hero2 = 0;
 var hero3 = 0;
@@ -36,7 +37,7 @@ var hero4pack5 = 0;
 var hero5pack5 = 0;
 var Cash = 0;
 var truechecking = 0;
-
+var spinfunction = 0;
 /****************************
  Main code
 ****************************/
@@ -70,11 +71,38 @@ if (timer1 >= 30) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
     }
-if (timer2 >= 84400) {
+if (timer2 >= 10) {
     herotimer = 0;
     timer2 = 0
     console.log("1 day passed. Rental ended.");
-  }
+    console.log("Badge collected: Grassless life")
+    spinfunction = spinfunction * 100
+    if (spinfunction <= 1) {
+        hero5pack1 = hero5pack1 + 1
+        spinfunction = 0
+         console.log("You got the 1% chance hero Hero 5 CONGRATULATIONS");
+    }
+      if (spinfunction > 1 && spinfunction <= 6) {
+        hero4pack1 = hero4pack1 + 1
+        spinfunction = 0
+         console.log("You got the 5% chance hero Hero 4");
+    }
+      if (spinfunction > 6 && spinfunction <= 16) {
+        hero3pack1 = hero3pack1 + 1
+        spinfunction = 0
+         console.log("You got the 10% chance hero Hero 3");
+    }
+  if (spinfunction > 16 && spinfunction <= 40) {
+        hero2pack1 = hero2pack1 + 1
+        spinfunction = 0
+         console.log("You got the 24% chance hero Hero 2");
+    }
+      if (spinfunction > 30) {
+        hero1pack1 = hero1pack1 + 1
+        spinfunction = 0
+        console.log("You got the 60% chance hero Hero 1");
+    }
+}
 }
 function poker() {
     if (PokerTimer >= 2) {
@@ -94,7 +122,7 @@ function poker() {
     }
 }
 function heropack1function() {
-    if (herotimer >= 2) {
+    if (herotimer >> 1) {
         herotimer = 0;
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
@@ -104,6 +132,23 @@ function heropack1function() {
     herotimer = herotimer + 1
     Cash = Cash - 500
     console.log("you have bought hero pack 1")
+    spinfunction = Math.random();
+    } else {
+        console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
+    }
+}
+function heropack2function() {
+    if (herotimer2 >> 1) {
+        herotimer2 = 0;
+        console.log("you can only rent one of this hero at a time")
+        timer2 = 0;
+    }
+    if (Cash >= 500 && herotimer2 <= 1) {
+        intervalID = 0;
+    herotimer2 = herotimer2 + 1
+    Cash = Cash - 500
+    console.log("you have bought hero pack 1")
+    spinfunction = Math.random();
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
