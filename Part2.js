@@ -181,11 +181,11 @@ function heropack2function() {
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
     }
-    if (Cash >= 500 && herotimer2 <= 1) {
+    if (Cash >= 5000 && herotimer2 <= 1) {
         intervalID = 0;
     herotimer2 = herotimer2 + 1
     Cash = Cash - 5000
-    console.log("you have bought hero pack 1")
+    console.log("you have bought hero pack 2")
     spinfunction2 = Math.random();
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
