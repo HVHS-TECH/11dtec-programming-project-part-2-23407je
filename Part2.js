@@ -68,7 +68,7 @@ if (timer1 >= 30) {
     console.log("30 seconds passed. Rental ended.");
     Cash = Cash + 25
   }
-  if (herotimer >= 1) {
+     if (herotimer >= 1) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
     }
