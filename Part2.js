@@ -160,7 +160,7 @@ function poker() {
     }
 }
 function heropack1function() {
-    if (herotimer >> 1) {
+    if (herotimer > 1) {
         herotimer = 0;
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
@@ -176,7 +176,7 @@ function heropack1function() {
     }
 }
 function heropack2function() {
-    if (herotimer2 >> 1) {
+    if (herotimer2 > 1) {
         herotimer2 = 0;
         console.log("you can only rent one of this hero at a time")
         timer2 = 0;
