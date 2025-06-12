@@ -80,27 +80,27 @@ if (timer2 >= 10) {
       if (spinfunction > 1 && spinfunction <= 6) {
         hero4pack1 = hero4pack1 + 1
         spinfunction = 0
-         console.log("You got the 5% chance hero Hero 4");
+         console.log("You got the 5% chance Hero 4");
     }
       if (spinfunction > 6 && spinfunction <= 16) {
         hero3pack1 = hero3pack1 + 1
         spinfunction = 0
-         console.log("You got the 10% chance hero Hero 3");
+         console.log("You got the 10% chance Hero 3");
     }
   if (spinfunction > 16 && spinfunction <= 40) {
         hero2pack1 = hero2pack1 + 1
         spinfunction = 0
-         console.log("You got the 24% chance hero Hero 2");
+         console.log("You got the 24% chance Hero 2");
     }
       if (spinfunction > 40) {
         hero1pack1 = hero1pack1 + 1
         spinfunction = 0
-        console.log("You got the 60% chance hero Hero 1");
+        console.log("You got the 60% chance Hero 1");
     }
 }
     if (heropacktimer2 >= 1) {
         timer3 = timer3 + 1
-        console.log("hero second", timer3);
+        console.log("pack 2", timer3);
     }
     if (timer3 >= 10) {
     heropacktimer2 = 0;
