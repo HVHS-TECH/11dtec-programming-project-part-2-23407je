@@ -39,6 +39,7 @@ var spinfunction3 = 0;
 function start() {
 Cash = Cash + 9999999;
 console.log(Cash);
+money.innerHTMl = "%",Cash;
 }
 
 //timerintervals
