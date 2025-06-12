@@ -39,7 +39,10 @@ var spinfunction3 = 0;
 function start() {
 Cash = Cash + 9999999;
 console.log(Cash);
-money.innerHTMl = "%",Cash;
+money.innerHTML = "$" + Cash;
+}
+if (hero1pack1 == 1) {
+    hero1pack1.innerHTML = "$" + hero1pack1;
 }
 
 //timerintervals
@@ -62,6 +65,7 @@ if (timer1 >= 30) {
     timer1 = 0
     console.log("30 seconds passed. Rental ended.");
     Cash = Cash + 25
+    money.innerHTML = "$" + Cash;
   }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
