@@ -37,7 +37,7 @@ var spinfunction3 = 0;
  Main code
 ****************************/
 function start() {
-Cash = Cash + 9999;
+Cash = Cash + 9999999;
 console.log(Cash);
 }
 
@@ -92,7 +92,7 @@ if (timer2 >= 10) {
         spinfunction = 0
          console.log("You got the 24% chance hero Hero 2");
     }
-      if (spinfunction > 30) {
+      if (spinfunction > 40) {
         hero1pack1 = hero1pack1 + 1
         spinfunction = 0
         console.log("You got the 60% chance hero Hero 1");
@@ -128,7 +128,7 @@ if (timer2 >= 10) {
         spinfunction2 = 0
          console.log("You got the 24% chance Hero 2 pack 2");
     }
-      if (spinfunction2 > 30) {
+      if (spinfunction2 > 40) {
         hero1pack2 = hero1pack2 + 1
         spinfunction2 = 0
         console.log("You got the 60% chance Hero 1 pack 2");
@@ -139,7 +139,7 @@ if (timer2 >= 10) {
         console.log("hero second", timer4);
     }
     if (timer4 >= 10) {
-    heropacktimer2 = 0;
+    heropacktimer3 = 0;
     timer4 = 0
     console.log("1 day passed. Rental ended.");
     console.log("Badge collected: Grassless life")
@@ -147,27 +147,27 @@ if (timer2 >= 10) {
     if (spinfunction3 <= 0.5) {
         hero5pack3 = hero5pack3 + 1
         spinfunction3 = 0
-         console.log("You got the 0.5% chance Hero 5 pack 2 CONGRATULATIONS");
+         console.log("You got the 0.5% chance Hero 5 pack 3 CONGRATULATIONS");
     }
       if (spinfunction3 > 0.5 && spinfunction3 <= 6.5) {
         hero4pack3 = hero4pack3 + 1
         spinfunction3 = 0
-         console.log("You got the 5% chance Hero 4 pack 2");
+         console.log("You got the 5% chance Hero 4 pack 3");
     }
       if (spinfunction3 > 6.5 && spinfunction3 <= 16) {
         hero3pack3 = hero3pack3 + 1
         spinfunction3 = 0
-         console.log("You got the 9.5% chance Hero 3 Pack 2");
+         console.log("You got the 9.5% chance Hero 3 Pack 3");
     }
   if (spinfunction3 > 16 && spinfunction3 <= 31) {
         hero2pack3 = hero2pack3 + 1
         spinfunction3 = 0
-         console.log("You got the 15% chance Hero 2 pack 2");
+         console.log("You got the 15% chance Hero 2 pack 3");
     }
       if (spinfunction3 > 31) {
         hero1pack3 = hero1pack3 + 1
         spinfunction3 = 0
-        console.log("You got the 69% chance Hero 1 pack 2");
+        console.log("You got the 69% chance Hero 1 pack 3");
     }
 }
 }
@@ -229,7 +229,7 @@ function heropack3function() {
     if (Cash >= 5000 && heropacktimer3 <= 1) {
         intervalID = 0;
     heropacktimer3 = heropacktimer3 + 1
-    Cash = Cash - 5000
+    Cash = Cash - 100000
     console.log("you have bought hero pack 3")
     spinfunction3 = Math.random();
     } else {
