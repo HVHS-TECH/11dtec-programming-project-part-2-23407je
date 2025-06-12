@@ -34,6 +34,26 @@ body {
   background-color: #8b8989;
   padding: 0px;
 }
+.container > p {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+.container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 15px;
+  margin-left: 0px;
+}
+.container {
+  display: inline-grid;
+  grid-template-columns: 300fr 300fr 300fr 300fr;
+  background-color: #8b8989;
+  padding: 0px;
+}
 
 .column {
   display: flex;
