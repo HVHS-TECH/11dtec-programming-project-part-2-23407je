@@ -42,7 +42,7 @@ console.log(Cash);
 money.innerHTML = "$" + Cash;
 }
 if (hero1pack1 == 1) {
-    hero1pack1.innerHTML = "$" + hero1pack1;
+    htmlhero1pack1.innerHTML = "$" + hero1pack1;
 }
 
 //timerintervals
