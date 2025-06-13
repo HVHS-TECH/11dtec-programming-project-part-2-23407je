@@ -121,26 +121,31 @@ if (timer2 >= 10) {
         hero5pack2 = hero5pack2 + 1
         spinfunction2 = 0
          console.log("You got the 1% chance Hero 5 pack 2 CONGRATULATIONS");
+          displayhero1.innerHTML = "hero5pack2 " + hero5pack2;
     }
       if (spinfunction2 > 1 && spinfunction2 <= 6) {
         hero4pack2 = hero4pack2 + 1
         spinfunction2 = 0
          console.log("You got the 5% chance Hero 4 pack 2");
+          displayhero9.innerHTML = "hero4pack2 " + hero4pack2;
     }
       if (spinfunction2 > 6 && spinfunction2 <= 16) {
         hero3pack2 = hero3pack2 + 1
         spinfunction2 = 0
          console.log("You got the 10% chance Hero 3 Pack 2");
+          displayhero8.innerHTML = "hero3pack2 " + hero13pack2;
     }
   if (spinfunction2 > 16 && spinfunction2 <= 40) {
         hero2pack2 = hero2pack2 + 1
         spinfunction2 = 0
          console.log("You got the 24% chance Hero 2 pack 2");
+          displayhero7.innerHTML = "hero2pack2 " + hero2pack2;
     }
       if (spinfunction2 > 40) {
         hero1pack2 = hero1pack2 + 1
         spinfunction2 = 0
         console.log("You got the 60% chance Hero 1 pack 2");
+         displayhero6.innerHTML = "hero1pack2 " + hero1pack2;
     }
 }
  if (heropacktimer3 >= 1) {
