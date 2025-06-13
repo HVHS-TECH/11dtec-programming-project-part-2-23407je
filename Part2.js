@@ -45,6 +45,7 @@ if (hero1pack1 == 1) {
     htmlhero1.innerHTML = "$" + hero1pack1;
 }
 
+
 //timerintervals
 let intervalID = setInterval(() => {
   if (truechecking == 1 || herotimer == 1 || heropacktimer2 == 1 || heropacktimer3 == 1) {
