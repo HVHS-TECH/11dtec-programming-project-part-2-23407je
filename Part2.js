@@ -100,7 +100,7 @@ if (timer2 >= 10) {
         hero1pack1 = hero1pack1 + 1
         spinfunction = 0
         console.log("You got the 60% chance Hero 1");
-         displayhero1.innerHTML = hero1pack1;
+         displayhero1.innerHTML = "hero1pack1" + hero1pack1;
     }
 }
     if (heropacktimer2 >= 1) {
