@@ -41,8 +41,8 @@ Cash = Cash + 9999999;
 console.log(Cash);
 money.innerHTML = "$" + Cash;
 }
-while (hero1pack1 == 1) {
-    htmlhero1.innerHTML = "$" + hero1pack1;
+while (hero1pack1 >= 1) {
+    htmlhero1.innerHTML = hero1pack1;
 }
 
 
