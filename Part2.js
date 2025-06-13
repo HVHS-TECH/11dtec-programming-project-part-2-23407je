@@ -41,9 +41,6 @@ Cash = Cash + 9999999;
 console.log(Cash);
 money.innerHTML = "$" + Cash;
 }
-while (hero1pack1 >= 1) {
-    displayhero1.innerHTML = hero1pack1;
-}
 
 
 //timerintervals
@@ -78,6 +75,7 @@ if (timer2 >= 10) {
     console.log("1 day passed. Rental ended.");
     console.log("Badge collected: Grassless life")
     spinfunction = spinfunction * 100
+
     if (spinfunction <= 1) {
         hero5pack1 = hero5pack1 + 1
         spinfunction = 0
@@ -102,6 +100,7 @@ if (timer2 >= 10) {
         hero1pack1 = hero1pack1 + 1
         spinfunction = 0
         console.log("You got the 60% chance Hero 1");
+         displayhero1.innerHTML = hero1pack1;
     }
 }
     if (heropacktimer2 >= 1) {
