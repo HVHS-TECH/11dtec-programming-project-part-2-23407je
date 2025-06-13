@@ -42,7 +42,7 @@ console.log(Cash);
 money.innerHTML = "$" + Cash;
 }
 while (hero1pack1 >= 1) {
-    htmlhero1.innerHTML = hero1pack1;
+    displayhero1.innerHTML = hero1pack1;
 }
 
 
