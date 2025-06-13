@@ -41,6 +41,9 @@ Cash = Cash + 9999999;
 console.log(Cash);
 money.innerHTML = "$" + Cash;
 }
+if (hero1pack1 || hero1pack2 || ) {
+    
+}
 
 
 //timerintervals
