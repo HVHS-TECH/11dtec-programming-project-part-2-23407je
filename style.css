@@ -82,11 +82,9 @@ button:hover {
 padding: 2px 2px;
   font-size: 20px;
   cursor: pointer;
-  border: none;
-  border-radius: 1px;
   background-color: #038d26;
   color: #000000;
   transition: background-color 0.3s;
-  width: 1920px; /* Set a fixed width */
+  width: 220px; /* Set a fixed width */
   text-align: center;
 }
