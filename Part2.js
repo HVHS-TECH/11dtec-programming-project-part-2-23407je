@@ -203,6 +203,7 @@ function poker() {
     PokerTimer = PokerTimer + 1
     Cash = Cash - 20
     console.log("thank you for your purchase you may buy again after 30 seconds")
+    Cash.innerHTML = "%" + Cash;
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
@@ -219,6 +220,7 @@ function heropack1function() {
     Cash = Cash - 500
     console.log("you have bought hero pack 1")
     spinfunction = Math.random();
+    Cash.innerHTML = "%" + Cash;
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
@@ -235,6 +237,7 @@ function heropack2function() {
     Cash = Cash - 5000
     console.log("you have bought hero pack 2")
     spinfunction2 = Math.random();
+    Cash.innerHTML = "%" + Cash;
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
@@ -251,6 +254,7 @@ function heropack3function() {
     Cash = Cash - 100000
     console.log("you have bought hero pack 3")
     spinfunction3 = Math.random();
+    Cash.innerHTML = "%" + Cash;
     } else {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
