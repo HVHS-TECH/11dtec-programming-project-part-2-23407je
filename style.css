@@ -7,12 +7,6 @@ body {
   background-color: #838080;
 }
 
-.container {
-  display: inline-grid;
-  grid-template-columns:300fr 300fr 300fr 300fr;
-  background-color: grey;
-  padding: 0px;
-}
 
 .container > p {
   background-color: #f1f1f1;
@@ -22,17 +16,11 @@ body {
   text-align: left;
 }
 .container > div {
-  background-color: #f1f1f1;
+  background-color: #fff1f1;
   border: 1px solid black;
   padding: 20px;
   margin: 15px;
   margin-left: 0px;
-}
-.container {
-  display: inline-grid;
-  grid-template-columns: 300fr 300fr 300fr 300fr;
-  background-color: #8b8989;
-  padding: 0px;
 }
 .container > p {
   background-color: #f1f1f1;
@@ -51,7 +39,6 @@ body {
 .container {
   display: inline-grid;
   grid-template-columns: 300fr 300fr 300fr 300fr;
-  background-color: #8b8989;
   padding: 0px;
 }
 
@@ -85,6 +72,6 @@ padding: 2px 2px;
   background-color: #038d26;
   color: #000000;
   transition: background-color 0.3s;
-  width: 220px; /* Set a fixed width */
-  text-align: center;
+  width: 215px; /* Set a fixed width */
+  text-align: left;
 }
