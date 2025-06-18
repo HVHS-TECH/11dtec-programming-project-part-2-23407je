@@ -28,7 +28,6 @@ var hero2pack3 = 0;
 var hero3pack3 = 0;
 var hero4pack3 = 0;
 var hero5pack3 = 0;
-var heroes = [""]
 var Cash = 0;
 var truechecking = 0;
 var spinfunction = 0;
