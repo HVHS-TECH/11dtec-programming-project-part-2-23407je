@@ -39,9 +39,6 @@ body {
   font-size: 15px;
 }
 .container2 > div {
-  position: right
-}
-.container2 > div {
   background-color: #fff1f1;
   border: 1px solid black;
   position: right;
