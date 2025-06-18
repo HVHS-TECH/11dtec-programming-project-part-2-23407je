@@ -27,6 +27,7 @@ body {
   background-color: #f1f1f1;
   border: 1px solid black;
   padding: 20px;
+  background-image: url('containerbackground.jpg');
 }
 .container {
   display: inline-grid;
@@ -37,11 +38,6 @@ body {
   border: 1px solid black;
   padding: 20px;
   font-size: 15px;
-}
-.container2 > div {
-  background-color: #fff1f1;
-  border: 1px solid black;
-  position: right;
 }
 .container2 > p {
   background-color: #f1f1f1;
