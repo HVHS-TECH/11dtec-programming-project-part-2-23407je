@@ -5,13 +5,7 @@ body {
 }
 
 
-.container > p {
-  background-color: #f1f1f1;
-  border: 1px solid black;
-  padding: 20px;
-  font-size: 15px;
-  
-}
+
 .container > div {
   background-color: #fff1f1;
   border: 1px solid black;
@@ -32,12 +26,6 @@ body {
 .container {
   display: inline-grid;
   grid-template-columns: 300fr 300fr 300fr 300fr;
-}
-.container2 > p {
-  background-color: #f1f1f1;
-  border: 1px solid black;
-  padding: 20px;
-  font-size: 15px;
 }
 .container2 > p {
   background-color: #f1f1f1;
