@@ -57,7 +57,7 @@ body {
 }
 .container2 {
   display: inline-grid;
-  grid-template-columns: 300fr 300fr 300fr 300fr;
+  grid-template-columns: 100fr 100fr;
   position: right;
 }
 
