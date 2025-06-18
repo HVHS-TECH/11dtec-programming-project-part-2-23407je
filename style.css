@@ -10,30 +10,27 @@ body {
   border: 1px solid black;
   padding: 20px;
   font-size: 15px;
-  position: right;
+  
 }
 .container > div {
   background-color: #fff1f1;
   border: 1px solid black;
-  position: right;
+  
 }
 .container > p {
   background-color: #f1f1f1;
   border: 1px solid black;
   padding: 20px;
   font-size: 15px;
-  position: right;
 }
 .container > div {
   background-color: #f1f1f1;
   border: 1px solid black;
   padding: 20px;
-  position: right;
 }
 .container {
   display: inline-grid;
   grid-template-columns: 300fr 300fr 300fr 300fr;
-  position: right;
 }
 .container2 > p {
   background-color: #f1f1f1;
@@ -79,8 +76,7 @@ button {
   border-radius: 3px;
   background-color: #000000;
   color: #ffffff;
-  transition: background-color 0.3s;
-  width: 220px; /* Set a fixed width */
+  width: 220px;
   text-align: center;
 }
 
