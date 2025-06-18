@@ -37,7 +37,7 @@ body {
   background-color: #f1f1f1;
   border: 1px solid black;
   padding: 20px;
-  position: right;
+  background-image: url('containerbackground.jpg');
 }
 .container2 {
   display: inline-grid;
