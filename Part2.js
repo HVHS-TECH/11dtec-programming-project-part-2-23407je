@@ -10,9 +10,6 @@ var PokerTimer = 0;
 var herotimer = 0;
 var heropacktimer2 = 0;
 var heropacktimer3 = 0;
-var hero1 = 0;
-var hero2 = 0;
-var hero3 = 0;
 var hero1pack1 = 0;
 var hero2pack1 = 0;
 var hero3pack1 = 0;
@@ -33,6 +30,7 @@ var truechecking = 0;
 var spinfunction = 0;
 var spinfunction2 = 0;
 var spinfunction3 = 0;
+var herobattletimer = 0;
 /****************************
  Main code
 ****************************/
@@ -65,7 +63,9 @@ if (timer1 >= 30) {
     Cash = Cash + 25
     money.innerHTML = "$" + Cash;
   }
-  
+if (hero1pack1 == 1 || hero2pack1 == 1 || hero3pack1 == 1 || hero4pack1 == 1 || hero5pack1 == 1) {
+  herobattletimer = herobattletimer + 1
+}
      if (herotimer >= 1) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
