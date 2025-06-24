@@ -68,7 +68,16 @@ if (hero1pack1 == 1) {
   hero1battletimer = hero1battletimer + 1
 }
 if (hero1battletimer >= 3) {
-Cash = Cash + 200
+  rewardhero1 = Math.random()
+  rewardhero1 = rewardhero1 * 100
+  if (rewardhero1 >= 50) {
+    Cash = Cash + 200
+     money.innerHTML = "$" + Cash;
+     console.log("success")
+  } else {
+    console.log("fail")
+  }
+  
 hero1battletimer = 0
 }
      if (herotimer >= 1) {
