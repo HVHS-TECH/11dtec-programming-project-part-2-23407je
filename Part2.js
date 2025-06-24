@@ -68,7 +68,10 @@ if (hero1pack1 == 1) {
   hero1battletimer = hero1battletimer + 1
 }
 if (hero1battletimer >= 300) {
-  rewardhero1 = Math.ceil() * 100
+  rewardhero1 = Math.random() * 100
+}
+if (condition) {
+  
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
