@@ -99,7 +99,7 @@ hero2battletimer = 0
 if (hero3pack1 == 1) {
   hero3battletimer = hero3battletimer + 1
 }
-if (hero3battletimer >= 300) {
+if (hero3battletimer >= 900) {
 
 hero3battletimer = 0
 }
