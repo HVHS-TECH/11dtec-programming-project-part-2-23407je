@@ -275,13 +275,33 @@ document.getElementById("Cyborg").innerHTML = `
         hero3pack3 = hero3pack3 + 1
         spinfunction3 = 0
          console.log("You got the 9.5% chance Hero 3 Pack 3");
- document.getElementById("BatMan").innerHTML = '<img src="BatMan.png" " width="200" alt="BatMan">'
+ document.getElementById("BatMan").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="BatMan.png" width="200" alt="BatMan">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown13()">Information</button>
+    <div id="myDropdown13" class="dropdown-content">
+      <p>Boosts the win chances of each hero by giving the villains kidney stones from his insane monster addiction every 3 minutes. Lasts 2 minutes ---- CHANCES TO GET THE HERO: 69% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
   if (spinfunction3 > 16 && spinfunction3 <= 31) {
         hero2pack3 = hero2pack3 + 1
         spinfunction3 = 0
          console.log("You got the 15% chance Hero 2 pack 3");
- document.getElementById("Coby").innerHTML = '<img src="Coby.png" " width="200" alt="Coby">'
+document.getElementById("Coby").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="Coby.png" width="200" alt="Coby">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown12()">Information</button>
+    <div id="myDropdown12" class="dropdown-content">
+      <p>gives mashed potatoes in the team BOOSTS WIN RATE BY 50% EVERY 10 MINUTES  ---- CHANCES TO GET THE HERO: 15% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
       if (spinfunction3 > 31) {
         hero1pack3 = hero1pack3 + 1
@@ -293,7 +313,7 @@ document.getElementById("Jahlayze").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown11()">Information</button>
     <div id="myDropdown11" class="dropdown-content">
-      <p>Boosts the win chances of each hero by giving the villains kidney stones from his insane monster addiction every 3 minutes. Lasts 2 minutes ---- CHANCES TO GET THE HERO: 69% CHANCE</p>
+      <p>Boosts the win chances of each hero by giving the villains kidney stones from his insane monster addiction every 3 minutes. Lasts 30 seconds ---- CHANCES TO GET THE HERO: 69% CHANCE</p>
     </div>
   </div>
 </div>
