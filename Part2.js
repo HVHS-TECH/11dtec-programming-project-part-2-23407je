@@ -32,6 +32,8 @@ var spinfunction2 = 0;
 var spinfunction3 = 0;
 var hero1battletimer = 0;
 var rewardhero1 = 0;
+var hero2battletimer = 0;
+var rewardhero2 = 0;
 /****************************
  Main code
 ****************************/
@@ -79,10 +81,10 @@ hero1battletimer = 0
 if (hero2pack1 == 1) {
   hero2battletimer = hero2battletimer + 1
 }
-if (hero1battletimer >= 3) {
-  rewardhero1 = Math.random()
-  rewardhero1 = rewardhero1 * 100
-  if (rewardhero1 >= 50) {
+if (hero2battletimer >= 3) {
+  rewardhero2 = Math.random()
+  rewardhero2 = rewardhero2 * 100
+  if (rewardhero2 >) {
     Cash = Cash + 200
      money.innerHTML = "$" + Cash;
   }
