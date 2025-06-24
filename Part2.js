@@ -281,7 +281,7 @@ document.getElementById("Cyborg").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown13()">Information</button>
     <div id="myDropdown13" class="dropdown-content">
-      <p>Swinging through the depths of the city of Gotham he beats crimes at speed like no other but at the cost  ---- CHANCES TO GET THE HERO: 69% CHANCE</p>
+      <p>Swinging through the depths of the city of Gotham he beats crimes at speed like no other with a 30 second fight. His win rates are.... 10% Low tiered, 40%  ---- CHANCES TO GET THE HERO: 69% CHANCE</p>
     </div>
   </div>
 </div>
