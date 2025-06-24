@@ -138,7 +138,7 @@ document.getElementById("CupcakeGirl").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown5()">Information</button>
     <div id="myDropdown5" class="dropdown-content">
-      <p>boosts certain cards win chances with its reality changing ability ---- CHANCES TO GET THE HERO: 1% CHANCE</p>
+      <p>Baits villains with her cupcakes but doesn't work often -- 10% chance of beating a high hero every 5 minutes ---- CHANCES TO GET THE HERO: 1% CHANCE</p>
     </div>
   </div>
 </div>
