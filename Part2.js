@@ -35,7 +35,7 @@ var rewardhero1 = 0;
 var hero2battletimer = 0;
 var rewardhero2 = 0;
 var hero3battletimer = 0;
-var rewardhero3 = 0;
+var hero3ability = 0;
 /****************************
  Main code
 ****************************/
@@ -74,6 +74,9 @@ if (hero1pack1 == 1) {
 if (hero1battletimer >= 300) {
   rewardhero1 = Math.random()
   rewardhero1 = rewardhero1 * 100
+  if () {
+    
+  }
   if (rewardhero1 >= 50) {
     Cash = Cash + 200
      money.innerHTML = "$" + Cash;
