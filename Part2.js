@@ -30,7 +30,7 @@ var truechecking = 0;
 var spinfunction = 0;
 var spinfunction2 = 0;
 var spinfunction3 = 0;
-var herobattletimer = 0;
+var hero1battletimer = 0;
 /****************************
  Main code
 ****************************/
@@ -63,8 +63,11 @@ if (timer1 >= 30) {
     Cash = Cash + 25
     money.innerHTML = "$" + Cash;
   }
-if (hero1pack1 == 1 || hero2pack1 == 1 || hero3pack1 == 1 || hero4pack1 == 1 || hero5pack1 == 1) {
-  herobattletimer = herobattletimer + 1
+if (hero1pack1 == 1) {
+  hero1battletimer = hero1battletimer + 1
+}
+if (hero1battletimer >= 3) {
+  hero1pack1 = 0
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
