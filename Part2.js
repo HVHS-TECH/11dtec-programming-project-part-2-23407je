@@ -172,7 +172,17 @@ document.getElementById("Wolverine").innerHTML = `
         hero5pack2 = hero5pack2 + 1
         spinfunction2 = 0
          console.log("You got the 1% chance Hero 5 pack 2 CONGRATULATIONS");
-  document.getElementById("EDP456").innerHTML = '<img src="EDP456.png" " width="200" alt="EDP456">'
+document.getElementById("EDP456").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="EDP456.png" width="200" alt="EDP456">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown10()">Information</button>
+    <div id="myDropdown10" class="dropdown-content">
+      <p> ---- CHANCES TO GET THE HERO: 1% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
       if (spinfunction2 > 1 && spinfunction2 <= 6) {
         hero4pack2 = hero4pack2 + 1
@@ -184,7 +194,7 @@ document.getElementById("DrStrange").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown9()">Information</button>
     <div id="myDropdown9" class="dropdown-content">
-      <p> ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
+      <p>every few minutes he recharges an ability allowing him to warp time and make time faster ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
     </div>
   </div>
 </div>
