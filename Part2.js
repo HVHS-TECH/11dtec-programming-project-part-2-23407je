@@ -263,7 +263,17 @@ document.getElementById("Cyborg").innerHTML = `
         hero5pack3 = hero5pack3 + 1
         spinfunction3 = 0
          console.log("You got the 0.5% chance Hero 5 pack 3 CONGRATULATIONS");
- document.getElementById("JFK").innerHTML = '<img src="JFK.png" " width="200" alt="JFK">'
+document.getElementById("JFK").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="JFK.png" width="200" alt="JFk">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown15()">Information</button>
+    <div id="myDropdown15" class="dropdown-content">
+      <p>HIS LEADERSHIP SHINES THROUGH  ---- CHANCES TO GET THE HERO: 0.5% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
       if (spinfunction3 > 0.5 && spinfunction3 <= 6.5) {
         hero4pack3 = hero4pack3 + 1
@@ -275,7 +285,7 @@ document.getElementById("LeeHarvey").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown14()">Information</button>
     <div id="myDropdown14" class="dropdown-content">
-      <p>Never misses his snipe winning battles  ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
+      <p>Never misses his snipe -- 100% chance of beating a high tiered villain ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
     </div>
   </div>
 </div>
