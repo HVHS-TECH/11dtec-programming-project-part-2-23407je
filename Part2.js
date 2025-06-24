@@ -207,16 +207,34 @@ if (hero12battletimer >= 300) {
     Cash = Cash + 2000
      money.innerHTML = "$" + Cash;
   }
-hero12battletimer = 0
+hero13battletimer = 0
 }
-if (hero10battletimer >= 300) {
-  rewardhero10 = Math.random()
-  rewardhero10 = rewardhero10 * 100
-  if (rewardhero10 <= 10) {
+if (hero13battletimer >= 300) {
+  rewardhero13 = Math.random()
+  rewardhero13 = rewardhero13 * 100
+  if (rewardhero13 <= 10) {
     Cash = Cash + 2000
      money.innerHTML = "$" + Cash;
   }
-hero10battletimer = 0
+hero13battletimer = 0
+}
+if (hero14battletimer >= 300) {
+  rewardhero14 = Math.random()
+  rewardhero14 = rewardhero14 * 100
+  if (rewardhero14 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero14battletimer = 0
+}
+if (hero15battletimer >= 300) {
+  rewardhero15 = Math.random()
+  rewardhero15 = rewardhero15 * 100
+  if (rewardhero15 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero15battletimer = 0
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
