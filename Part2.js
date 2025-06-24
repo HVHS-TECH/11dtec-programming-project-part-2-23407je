@@ -203,11 +203,20 @@ hero11battletimer = 0
 if (hero12battletimer >= 300) {
   rewardhero12 = Math.random()
   rewardhero12 = rewardhero12 * 100
-  if (rewardhero10 <= 10) {
+  if (rewardhero12 <= 10) {
     Cash = Cash + 2000
      money.innerHTML = "$" + Cash;
   }
 hero12battletimer = 0
+}
+if (hero10battletimer >= 300) {
+  rewardhero10 = Math.random()
+  rewardhero10 = rewardhero10 * 100
+  if (rewardhero10 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero10battletimer = 0
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
