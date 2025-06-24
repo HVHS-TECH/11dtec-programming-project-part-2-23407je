@@ -129,7 +129,7 @@ if (timer2 >= 1) {
     spinfunction = spinfunction * 100
 
     if (spinfunction <= 1) {
-        hero5pack1 = hero5pack1 + 1
+        hero5pack1 = 1
         spinfunction = 0
          console.log("You got the 1% chance hero Hero 5 CONGRATULATIONS");
 document.getElementById("CupcakeGirl").innerHTML = `
@@ -145,7 +145,7 @@ document.getElementById("CupcakeGirl").innerHTML = `
     `;
     }
       if (spinfunction > 1 && spinfunction <= 6) {
-        hero4pack1 = hero4pack1 + 1
+        hero4pack1 = 1
         spinfunction = 0
          console.log("You got the 5% chance Hero 4");
 document.getElementById("PhantomStranger").innerHTML = `
@@ -161,7 +161,7 @@ document.getElementById("PhantomStranger").innerHTML = `
     `;
     }
       if (spinfunction > 6 && spinfunction <= 16) {
-        hero3pack1 = hero3pack1 + 1
+        hero3pack1 = 1
         spinfunction = 0
          console.log("You got the 10% chance Hero 3");
 document.getElementById("TheSpectre").innerHTML = `
@@ -177,7 +177,7 @@ document.getElementById("TheSpectre").innerHTML = `
     `;
     }
   if (spinfunction > 16 && spinfunction <= 40) {
-        hero2pack1 = hero2pack1 + 1
+        hero2pack1 = 1
         spinfunction = 0
          console.log("You got the 24% chance Hero 2");
 document.getElementById("Wolverine").innerHTML = `
@@ -193,7 +193,7 @@ document.getElementById("Wolverine").innerHTML = `
     `;
     }
     if (spinfunction > 40) {
-    hero1pack1 = hero1pack1 + 1;
+    hero1pack1 = 1
     spinfunction = 0;
     console.log("You got the 60% chance Hero 1");
 
