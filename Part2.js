@@ -115,7 +115,7 @@ if (hero4pack1 == 1) {
   hero4battletimer = hero4battletimer + 1
 }
 if (hero4battletimer >= 900) {
-
+Cash = Cash + 1500
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
