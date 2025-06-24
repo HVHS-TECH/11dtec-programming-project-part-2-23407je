@@ -69,9 +69,9 @@ if (hero1pack1 == 1) {
 }
 if (hero1battletimer >= 300) {
   rewardhero1 = Math.random() * 100
-}
-if (condition) {
-  
+  if (rewardhero1 >= 50) {
+    Cash = Cash + 
+  }
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
