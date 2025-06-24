@@ -180,7 +180,7 @@ if (hero9battletimer >= 300) {
 hero9battletimer = 0
 }
 if (hero5pack2 == 1) {
-  hero6battletimer = hero6battletimer + 1
+  hero10battletimer = hero10battletimer + 1
 }
 if (hero10battletimer >= 300) {
   rewardhero10 = Math.random()
@@ -191,6 +191,9 @@ if (hero10battletimer >= 300) {
   }
 hero10battletimer = 0
 }
+if (hero1pack3 == 1) {
+  hero10battletimer = hero10battletimer + 1
+}
 if (hero11battletimer >= 300) {
   rewardhero11 = Math.random()
   rewardhero11 = rewardhero11 * 100
@@ -200,6 +203,7 @@ if (hero11battletimer >= 300) {
   }
 hero11battletimer = 0
 }
+
 if (hero12battletimer >= 300) {
   rewardhero12 = Math.random()
   rewardhero12 = rewardhero12 * 100
