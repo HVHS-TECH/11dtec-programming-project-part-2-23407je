@@ -269,7 +269,7 @@ document.getElementById("JFK").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown15()">Information</button>
     <div id="myDropdown15" class="dropdown-content">
-      <p>HIS LEADERSHIP SHINES THROUGH  ---- CHANCES TO GET THE HERO: 0.5% CHANCE</p>
+      <p>HIS LEADERSHIP SHINES THROUGH GIVING EVERYONE A 100% WIN RATE FOR 1 MINUTE EVERY 2 MINUTES AND ALSO 50K EVERY 90 SECONDS ---- CHANCES TO GET THE HERO: 0.5% CHANCE</p>
     </div>
   </div>
 </div>
