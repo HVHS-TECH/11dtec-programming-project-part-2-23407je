@@ -253,7 +253,7 @@ document.getElementById("Cyborg").innerHTML = `
         timer4 = timer4 + 1
         console.log("hero second", timer4);
     }
-    if (timer4 >= 1) {
+    if (timer4 >= 10) {
     heropacktimer3 = 0;
     timer4 = 0
     console.log("1 day passed. Rental ended.");
