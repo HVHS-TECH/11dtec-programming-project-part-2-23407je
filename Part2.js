@@ -117,6 +117,18 @@ if (hero4pack1 == 1) {
 if (hero4battletimer >= 900) {
 Cash = Cash + 1500
 }
+if (hero5pack1 == 1) {
+  hero5battletimer = hero5battletimer + 1
+}
+if (hero5battletimer >= 300) {
+  rewardhero5 = Math.random()
+  rewardhero5 = rewardhero5 * 100
+  
+  if (rewardhero1 >= 50) {
+    Cash = Cash + 200
+     money.innerHTML = "$" + Cash;
+  }
+hero1battletimer = 0
      if (herotimer >= 1) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
