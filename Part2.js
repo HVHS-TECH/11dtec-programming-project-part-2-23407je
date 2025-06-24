@@ -543,7 +543,6 @@ document.getElementById("Jahlayze").innerHTML = `
     `;
     }
 }
-}
 function poker() {
     if (PokerTimer >= 2) {
         truechecking = 0;
