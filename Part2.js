@@ -65,6 +65,7 @@ if (timer1 >= 30) {
     Cash = Cash + 25
     money.innerHTML = "$" + Cash;
   }
+  
      if (herotimer >= 1) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
