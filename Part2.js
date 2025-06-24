@@ -37,6 +37,8 @@ var rewardhero2 = 0;
 var hero3battletimer = 0;
 var hero3ability = 0;
 var hero1abilitychecker = 0;
+var hero4battletimer = 0;
+var rewardhero4 = 0;
 /****************************
  Main code
 ****************************/
@@ -110,12 +112,10 @@ hero3battletimer = 0
 hero1abilitychecker = 1
 }
 if (hero4pack1 == 1) {
-  hero3battletimer = hero3battletimer + 1
+  hero4battletimer = hero4battletimer + 1
 }
-if (hero3battletimer >= 900) {
-hero3ability = 1
-hero3battletimer = 0
-hero1abilitychecker = 1
+if (hero4battletimer >= 900) {
+
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
