@@ -43,7 +43,7 @@ money.innerHTML = "$" + Cash;
 
 //timerintervals
 let intervalID = setInterval(() => {
-  if (truechecking == 1 || herotimer == 1 || heropacktimer2 == 1 || heropacktimer3 == 1) {
+  if (truechecking == 1 || herotimer == 1 || heropacktimer2 == 1 || heropacktimer3 == 1 || hero1pack1 == 1) {
     timeRenting();
   }
 }, 1000);
@@ -68,6 +68,7 @@ if (hero1pack1 == 1) {
 }
 if (hero1battletimer >= 3) {
   hero1pack1 = 0
+   document.getElementById("Robin").innerHTML = "";
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
