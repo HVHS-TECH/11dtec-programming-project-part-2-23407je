@@ -521,6 +521,3 @@ function toggleDropdown14() {
 function toggleDropdown15() {
   document.getElementById("myDropdown15").classList.toggle("show");
 }
-function testingerrors() {
-  console.log(hero1pack1)
-}
