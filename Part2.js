@@ -41,6 +41,27 @@ var hero4battletimer = 0;
 var rewardhero4 = 0;
 var hero5battletimer = 0;
 var rewardhero5 = 0;
+var hero6battletimer = 0;
+var rewardhero6 = 0;
+var hero7battletimer = 0;
+var rewardhero7 = 0;
+var hero8battletimer = 0;
+var rewardhero8 = 0;
+var hero9battletimer = 0;
+var rewardhero9 = 0;
+var hero10battletimer = 0;
+var rewardhero10 = 0;
+var hero11battletimer = 0;
+var rewardhero11 = 0;
+var hero12battletimer = 0;
+var rewardhero12 = 0;
+var hero13battletimer = 0;
+var rewardhero13 = 0;
+var hero14battletimer = 0;
+var rewardhero14 = 0;
+var hero15battletimer = 0;
+var rewardhero15 = 0;
+
 /****************************
  Main code
 ****************************/
@@ -213,7 +234,10 @@ if (hero12battletimer >= 300) {
     Cash = Cash + 2000
      money.innerHTML = "$" + Cash;
   }
-hero13battletimer = 0
+hero12battletimer = 0
+}
+if (hero3pack3 == 1) {
+  hero13battletimer = hero13battletimer + 1
 }
 if (hero13battletimer >= 300) {
   rewardhero13 = Math.random()
@@ -224,6 +248,9 @@ if (hero13battletimer >= 300) {
   }
 hero13battletimer = 0
 }
+if (hero1pack3 == 1) {
+  hero10battletimer = hero10battletimer + 1
+}
 if (hero14battletimer >= 300) {
   rewardhero14 = Math.random()
   rewardhero14 = rewardhero14 * 100
@@ -232,6 +259,9 @@ if (hero14battletimer >= 300) {
      money.innerHTML = "$" + Cash;
   }
 hero14battletimer = 0
+}
+if (hero1pack3 == 1) {
+  hero10battletimer = hero10battletimer + 1
 }
 if (hero15battletimer >= 300) {
   rewardhero15 = Math.random()
