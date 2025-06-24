@@ -178,7 +178,7 @@ document.getElementById("EDP456").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown10()">Information</button>
     <div id="myDropdown10" class="dropdown-content">
-      <p>distracts multiple enemies at once defeating some passively with his love for cupcakes but gets defeated often with  ---- CHANCES TO GET THE HERO: 1% CHANCE</p>
+      <p>distracts multiple enemies at once defeating some passively with his love for cupcakes but although he wins everytime he also loses almost everytime making his cooldown long  -- 15 minute cooldown ---- CHANCES TO GET THE HERO: 1% CHANCE</p>
     </div>
   </div>
 </div>
