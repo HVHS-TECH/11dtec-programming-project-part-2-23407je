@@ -275,7 +275,7 @@ document.getElementById("LeeHarvey").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown14()">Information</button>
     <div id="myDropdown14" class="dropdown-content">
-      <p>Never misses his snipe  ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
+      <p>Never misses his snipe winning battles  ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
     </div>
   </div>
 </div>
