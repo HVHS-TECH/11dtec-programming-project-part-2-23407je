@@ -178,7 +178,17 @@ document.getElementById("Wolverine").innerHTML = `
         hero4pack2 = hero4pack2 + 1
         spinfunction2 = 0
          console.log("You got the 5% chance Hero 4 pack 2");
- document.getElementById("DrStrange").innerHTML = '<img src="DrStrange.png" " width="200" alt="DrStrange">'
+document.getElementById("DrStrange").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="DrStrange.png" width="200" alt="DrStrange">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown9()">Information</button>
+    <div id="myDropdown9" class="dropdown-content">
+      <p> ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
       if (spinfunction2 > 6 && spinfunction2 <= 16) {
         hero3pack2 = hero3pack2 + 1
@@ -186,11 +196,11 @@ document.getElementById("Wolverine").innerHTML = `
          console.log("You got the 10% chance Hero 3 Pack 2");
 document.getElementById("DrFate").innerHTML = `
 <div id="Hero" style="display;">
-  <img src="Jahlayze.png" width="200" alt="Jahlayze">
+  <img src="DrFate.png" width="200" alt="DrFate">
   <div class="dropdown">
-    <button class="dropbtn" onclick="toggleDropdown11()">Information</button>
-    <div id="myDropdown11" class="dropdown-content">
-      <p>Teleports villains to your best heroes battlefield every 2 minutes ---- CHANCES TO GET THE HERO: 14% CHANCE</p>
+    <button class="dropbtn" onclick="toggleDropdown8()">Information</button>
+    <div id="myDropdown8" class="dropdown-content">
+      <p>Teleports villains middle tiered or higher to your best heroes battlefield every 5 minutes ---- CHANCES TO GET THE HERO: 14% CHANCE</p>
     </div>
   </div>
 </div>
