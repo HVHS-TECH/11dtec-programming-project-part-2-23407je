@@ -269,7 +269,17 @@ document.getElementById("Cyborg").innerHTML = `
         hero4pack3 = hero4pack3 + 1
         spinfunction3 = 0
          console.log("You got the 5% chance Hero 4 pack 3");
- document.getElementById("LeeHarvey").innerHTML = '<img src="LeeHarvey.png" " width="200" alt="LeeHarvey">'
+document.getElementById("LeeHarvey").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="LeeHarvey.png" width="200" alt="LeeHarvey">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown14()">Information</button>
+    <div id="myDropdown14" class="dropdown-content">
+      <p>Never misses his snipe  ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
       if (spinfunction3 > 6.5 && spinfunction3 <= 16) {
         hero3pack3 = hero3pack3 + 1
@@ -281,7 +291,7 @@ document.getElementById("Cyborg").innerHTML = `
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown13()">Information</button>
     <div id="myDropdown13" class="dropdown-content">
-      <p>Swinging through the depths of the city of Gotham he beats crimes at speed like no other with a 30 second fight. His win rates are.... 10% Low tiered, 40%  ---- CHANCES TO GET THE HERO: 69% CHANCE</p>
+      <p>Swinging through the depths of the city of Gotham he beats crimes at speed like no other with a 30 second fight. His win rates are.... 10% Low tiered, 40% middle tiered, 30% high tiered, 10% BOSS TIERED ---- CHANCES TO GET THE HERO: 9.5% CHANCE</p>
     </div>
   </div>
 </div>
