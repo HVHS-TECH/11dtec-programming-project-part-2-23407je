@@ -109,6 +109,14 @@ hero3ability = 1
 hero3battletimer = 0
 hero1abilitychecker = 1
 }
+if (hero4pack1 == 1) {
+  hero3battletimer = hero3battletimer + 1
+}
+if (hero3battletimer >= 900) {
+hero3ability = 1
+hero3battletimer = 0
+hero1abilitychecker = 1
+}
      if (herotimer >= 1) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
