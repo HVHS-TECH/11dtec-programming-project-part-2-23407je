@@ -74,7 +74,8 @@ if (hero1pack1 == 1) {
 if (hero1battletimer >= 300) {
   rewardhero1 = Math.random()
   rewardhero1 = rewardhero1 * 100
-  if () {
+  if (hero3ability == 1) {
+    rewardhero1 = rewardhero1 * 1.1
     
   }
   if (rewardhero1 >= 50) {
@@ -103,7 +104,7 @@ if (hero3pack1 == 1) {
   hero3battletimer = hero3battletimer + 1
 }
 if (hero3battletimer >= 900) {
-
+hero3ability = 1
 hero3battletimer = 0
 }
      if (herotimer >= 1) {
