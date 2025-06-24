@@ -69,7 +69,7 @@ if (timer1 >= 30) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
     }
-if (timer2 >= 10) {
+if (timer2 >= 1) {
     herotimer = 0;
     timer2 = 0
     console.log("1 day passed. Rental ended.");
@@ -80,32 +80,83 @@ if (timer2 >= 10) {
         hero5pack1 = hero5pack1 + 1
         spinfunction = 0
          console.log("You got the 1% chance hero Hero 5 CONGRATULATIONS");
-          displayhero5.innerHTML = "hero5pack1 " + hero5pack1;
+document.getElementById("CupcakeGirl").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="CupcakeGirl.png" width="200" alt="CupcakeGirl">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown5()">Information</button>
+    <div id="myDropdown5" class="dropdown-content">
+      <p>boosts certain cards win chances with its reality changing ability ---- CHANCES TO GET THE HERO: 1% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
       if (spinfunction > 1 && spinfunction <= 6) {
         hero4pack1 = hero4pack1 + 1
         spinfunction = 0
          console.log("You got the 5% chance Hero 4");
-          displayhero4.innerHTML = "hero4pack1 " + hero4pack1;
+document.getElementById("PhantomStranger").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="PhantomStranger.png" width="200" alt="PhantomStranger">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown4()">Information</button>
+    <div id="myDropdown4" class="dropdown-content">
+      <p>Kills a mid tiered enemy every 15 minutes ---- CHANCES TO GET THE HERO: 5% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
       if (spinfunction > 6 && spinfunction <= 16) {
         hero3pack1 = hero3pack1 + 1
         spinfunction = 0
          console.log("You got the 10% chance Hero 3");
-          displayhero3.innerHTML = "hero3pack1 " + hero3pack1;
+document.getElementById("TheSpectre").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="TheSpectre.png" width="200" alt="TheSpectre">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown3()">Information</button>
+    <div id="myDropdown3" class="dropdown-content">
+      <p>boosts certain cards win chances with its reality changing ability ---- CHANCES TO GET THE HERO: 14% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
   if (spinfunction > 16 && spinfunction <= 40) {
         hero2pack1 = hero2pack1 + 1
         spinfunction = 0
          console.log("You got the 24% chance Hero 2");
-          displayhero2.innerHTML = "hero2pack1 " + hero2pack1;
+document.getElementById("Wolverine").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="Wolverine.png" width="200" alt="Wolverine">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown2()">Information</button>
+    <div id="myDropdown2" class="dropdown-content">
+      <p>Fights for you and has a 40% win chance for low leveled enemys. Also has a 10% chance of defeating a middle tiered enemy ---- CHANCES TO GET THE HERO: 24% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
-      if (spinfunction > 40) {
-        hero1pack1 = hero1pack1 + 1
-        spinfunction = 0
-        console.log("You got the 60% chance Hero 1");
-         displayhero1.innerHTML = "hero1pack1 " + hero1pack1;
-    }
+    if (spinfunction > 40) {
+    hero1pack1 = hero1pack1 + 1;
+    spinfunction = 0;
+    console.log("You got the 60% chance Hero 1");
+
+    document.getElementById("Robin").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="Robin.png" width="200" alt="Robin">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown()">Information</button>
+    <div id="myDropdown" class="dropdown-content">
+      <p>Robin gives a +5% win boost and wins 50% of the time against low level villains ---- CHANCES TO GET THE HERO: 60% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
+}
 }
     if (heropacktimer2 >= 1) {
         timer3 = timer3 + 1
@@ -121,38 +172,68 @@ if (timer2 >= 10) {
         hero5pack2 = hero5pack2 + 1
         spinfunction2 = 0
          console.log("You got the 1% chance Hero 5 pack 2 CONGRATULATIONS");
-          displayhero10.innerHTML = "hero5pack2 " + hero5pack2;
+  document.getElementById("EDP456").innerHTML = '<img src="EDP456.png" " width="200" alt="EDP456">'
     }
       if (spinfunction2 > 1 && spinfunction2 <= 6) {
         hero4pack2 = hero4pack2 + 1
         spinfunction2 = 0
          console.log("You got the 5% chance Hero 4 pack 2");
-          displayhero9.innerHTML = "hero4pack2 " + hero4pack2;
+ document.getElementById("DrStrange").innerHTML = '<img src="DrStrange.png" " width="200" alt="DrStrange">'
     }
       if (spinfunction2 > 6 && spinfunction2 <= 16) {
         hero3pack2 = hero3pack2 + 1
         spinfunction2 = 0
          console.log("You got the 10% chance Hero 3 Pack 2");
-          displayhero8.innerHTML = "hero3pack2 " + hero13pack2;
+document.getElementById("DrFate").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="Jahlayze.png" width="200" alt="Jahlayze">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown11()">Information</button>
+    <div id="myDropdown11" class="dropdown-content">
+      <p>Teleports villains to your best heroes battlefield every 2 minutes ---- CHANCES TO GET THE HERO: 14% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
   if (spinfunction2 > 16 && spinfunction2 <= 40) {
         hero2pack2 = hero2pack2 + 1
         spinfunction2 = 0
          console.log("You got the 24% chance Hero 2 pack 2");
-          displayhero7.innerHTML = "hero2pack2 " + hero2pack2;
+document.getElementById("Sentry").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="Sentry.png" width="200" alt="Sentry">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown7()">Information</button>
+    <div id="myDropdown7" class="dropdown-content">
+      <p>70% chance to beat a middle tiered villain and a 30% chance for a high tiered villain ---- CHANCES TO GET THE HERO: 24% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
       if (spinfunction2 > 40) {
         hero1pack2 = hero1pack2 + 1
         spinfunction2 = 0
         console.log("You got the 60% chance Hero 1 pack 2");
-         displayhero6.innerHTML = "hero1pack2 " + hero1pack2;
+document.getElementById("Cyborg").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="Cyborg.png" width="200" alt="Cyborg">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown6()">Information</button>
+    <div id="myDropdown6" class="dropdown-content">
+      <p>beats middle tiered villains ---- CHANCES TO GET THE HERO: 60% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
 }
  if (heropacktimer3 >= 1) {
         timer4 = timer4 + 1
         console.log("hero second", timer4);
     }
-    if (timer4 >= 10) {
+    if (timer4 >= 1) {
     heropacktimer3 = 0;
     timer4 = 0
     console.log("1 day passed. Rental ended.");
@@ -162,31 +243,41 @@ if (timer2 >= 10) {
         hero5pack3 = hero5pack3 + 1
         spinfunction3 = 0
          console.log("You got the 0.5% chance Hero 5 pack 3 CONGRATULATIONS");
-         displayhero15.innerHTML = "hero5pack3 " + hero5pack3;
+ document.getElementById("JFK").innerHTML = '<img src="JFK.png" " width="200" alt="JFK">'
     }
       if (spinfunction3 > 0.5 && spinfunction3 <= 6.5) {
         hero4pack3 = hero4pack3 + 1
         spinfunction3 = 0
          console.log("You got the 5% chance Hero 4 pack 3");
-         displayhero14.innerHTML = "hero4pack3 " + hero4pack3;
+ document.getElementById("LeeHarvey").innerHTML = '<img src="LeeHarvey.png" " width="200" alt="LeeHarvey">'
     }
       if (spinfunction3 > 6.5 && spinfunction3 <= 16) {
         hero3pack3 = hero3pack3 + 1
         spinfunction3 = 0
          console.log("You got the 9.5% chance Hero 3 Pack 3");
-         displayhero13.innerHTML = "hero3pack3 " + hero3pack3;
+ document.getElementById("BatMan").innerHTML = '<img src="BatMan.png" " width="200" alt="BatMan">'
     }
   if (spinfunction3 > 16 && spinfunction3 <= 31) {
         hero2pack3 = hero2pack3 + 1
         spinfunction3 = 0
          console.log("You got the 15% chance Hero 2 pack 3");
-         displayhero12.innerHTML = "hero2pack3 " + hero2pack3;
+ document.getElementById("Coby").innerHTML = '<img src="Coby.png" " width="200" alt="Coby">'
     }
       if (spinfunction3 > 31) {
         hero1pack3 = hero1pack3 + 1
         spinfunction3 = 0
         console.log("You got the 69% chance Hero 1 pack 3");
-         displayhero11.innerHTML = "hero1pack3 " + hero1pack3;
+document.getElementById("Jahlayze").innerHTML = `
+<div id="Hero" style="display;">
+  <img src="Jahlayze.png" width="200" alt="Jahlayze">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown11()">Information</button>
+    <div id="myDropdown11" class="dropdown-content">
+      <p>Boosts the win chances of each hero by giving the villains kidney stones from his insane monster addiction every 3 minutes. Lasts 2 minutes ---- CHANCES TO GET THE HERO: 69% CHANCE</p>
+    </div>
+  </div>
+</div>
+    `;
     }
 }
 }
@@ -259,3 +350,49 @@ function heropack3function() {
         console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
     }
 }
+function toggleDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function toggleDropdown2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+function toggleDropdown3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+function toggleDropdown4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+function toggleDropdown5() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+function toggleDropdown6() {
+  document.getElementById("myDropdown6").classList.toggle("show");
+}
+function toggleDropdown7() {
+  document.getElementById("myDropdown7").classList.toggle("show");
+}
+function toggleDropdown8() {
+  document.getElementById("myDropdown8").classList.toggle("show");
+}
+function toggleDropdown9() {
+  document.getElementById("myDropdown9").classList.toggle("show");
+}
+function toggleDropdown10() {
+  document.getElementById("myDropdown10").classList.toggle("show");
+}
+function toggleDropdown11() {
+  document.getElementById("myDropdown11").classList.toggle("show");
+}
+function toggleDropdown12() {
+  document.getElementById("myDropdown12").classList.toggle("show");
+}
+function toggleDropdown13() {
+  document.getElementById("myDropdown13").classList.toggle("show");
+}
+function toggleDropdown14() {
+  document.getElementById("myDropdown14").classList.toggle("show");
+}
+function toggleDropdown15() {
+  document.getElementById("myDropdown15").classList.toggle("show");
+}
+
