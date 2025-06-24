@@ -34,6 +34,8 @@ var hero1battletimer = 0;
 var rewardhero1 = 0;
 var hero2battletimer = 0;
 var rewardhero2 = 0;
+var hero3battletimer = 0;
+var rewardhero3 = 0;
 /****************************
  Main code
 ****************************/
@@ -90,6 +92,23 @@ if (hero2battletimer >= 300) {
   }
   if (rewardhero2 <= 10) {
    Cash = Cash + 300
+    money.innerHTML = "$" + Cash;
+  }
+hero2battletimer = 0
+}
+if (hero3pack1 == 1) {
+  hero3battletimer = hero3battletimer + 1
+}
+if (hero3battletimer >= 300) {
+  rewardhero3 = Math.random()
+  rewardhero3 = rewardhero3 * 100
+  if (rewardhero3 <= 40 && rewardhero3 > 10) {
+    Cash = Cash + 150
+     money.innerHTML = "$" + Cash;
+  }
+  if (rewardhero3 <= 10) {
+   Cash = Cash + 300
+    money.innerHTML = "$" + Cash;
   }
 hero2battletimer = 0
 }
