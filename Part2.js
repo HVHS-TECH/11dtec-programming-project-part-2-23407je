@@ -203,7 +203,9 @@ if (hero11battletimer >= 300) {
   }
 hero11battletimer = 0
 }
-
+if (hero2pack3 == 1) {
+  hero10battletimer = hero10battletimer + 1
+}
 if (hero12battletimer >= 300) {
   rewardhero12 = Math.random()
   rewardhero12 = rewardhero12 * 100
