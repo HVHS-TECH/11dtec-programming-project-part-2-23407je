@@ -130,6 +130,7 @@ if (hero5battletimer >= 300) {
      money.innerHTML = "$" + Cash;
   }
 hero5battletimer = 0
+}
      if (herotimer >= 1) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
