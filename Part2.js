@@ -131,6 +131,84 @@ if (hero5battletimer >= 300) {
   }
 hero5battletimer = 0
 }
+if (hero1pack2 == 1) {
+  hero6battletimer = hero6battletimer + 1
+}
+if (hero6battletimer >= 300) {
+  rewardhero6 = Math.random()
+  rewardhero6 = rewardhero6 * 100
+  if (rewardhero6 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero6battletimer = 0
+}
+if (hero2pack2 == 1) {
+  hero7battletimer = hero7battletimer + 1
+}
+if (hero7battletimer >= 300) {
+  rewardhero7 = Math.random()
+  rewardhero7 = rewardhero7 * 100
+  if (rewardhero7 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero7battletimer = 0
+}
+if (hero3pack2 == 1) {
+  hero8battletimer = hero8battletimer + 1
+}
+if (hero8battletimer >= 300) {
+  rewardhero8 = Math.random()
+  rewardhero8 = rewardhero8 * 100
+  if (rewardhero8 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero8battletimer = 0
+}
+if (hero4pack2 == 1) {
+  hero9battletimer = hero9battletimer + 1
+}
+if (hero9battletimer >= 300) {
+  rewardhero9 = Math.random()
+  rewardhero9 = rewardhero9 * 100
+  if (rewardhero9 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero9battletimer = 0
+}
+if (hero5pack2 == 1) {
+  hero6battletimer = hero6battletimer + 1
+}
+if (hero10battletimer >= 300) {
+  rewardhero10 = Math.random()
+  rewardhero10 = rewardhero10 * 100
+  if (rewardhero10 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero10battletimer = 0
+}
+if (hero11battletimer >= 300) {
+  rewardhero11 = Math.random()
+  rewardhero11 = rewardhero11 * 100
+  if (rewardhero11 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero11battletimer = 0
+}
+if (hero12battletimer >= 300) {
+  rewardhero12 = Math.random()
+  rewardhero12 = rewardhero12 * 100
+  if (rewardhero10 <= 10) {
+    Cash = Cash + 2000
+     money.innerHTML = "$" + Cash;
+  }
+hero12battletimer = 0
+}
      if (herotimer >= 1) {
         timer2 = timer2 + 1
         console.log("test seconds", timer2);
