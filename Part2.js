@@ -91,7 +91,7 @@ if (hero2battletimer >= 300) {
   if (rewardhero2 <= 10) {
    Cash = Cash + 300
   }
-hero1battletimer = 0
+hero2battletimer = 0
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
