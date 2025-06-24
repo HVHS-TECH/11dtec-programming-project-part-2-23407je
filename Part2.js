@@ -31,6 +31,7 @@ var spinfunction = 0;
 var spinfunction2 = 0;
 var spinfunction3 = 0;
 var hero1battletimer = 0;
+var rewardhero1 = 0;
 /****************************
  Main code
 ****************************/
@@ -66,9 +67,8 @@ if (timer1 >= 30) {
 if (hero1pack1 == 1) {
   hero1battletimer = hero1battletimer + 1
 }
-if (hero1battletimer >= 3) {
-  hero1pack1 = 0
-   document.getElementById("Robin").innerHTML = "";
+if (hero1battletimer >= 300) {
+  rewardhero1 = Math.ceil() * 100
 }
      if (herotimer >= 1) {
         timer2 = timer2 + 1
