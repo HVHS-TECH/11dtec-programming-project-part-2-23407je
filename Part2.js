@@ -159,7 +159,6 @@ function timeRenting() {
     Cash = Cash + 700
   }
   hero6battletimer = 0
-}
 if (hero2pack2 == 1) {
   hero7battletimer = hero7battletimer + 1
 }
@@ -278,7 +277,7 @@ if (timer2 >= 1) {
   console.log("1 day passed. Rental ended.");
   console.log("Badge collected: Grassless life")
   spinfunction = spinfunction * 100
-
+}
   if (spinfunction <= 1) {
     hero5pack1 = 1
     spinfunction = 0
