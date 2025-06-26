@@ -277,7 +277,6 @@ if (timer2 >= 10) {
   console.log("1 day passed. Rental ended.");
   console.log("Badge collected: Grassless life")
   spinfunction = spinfunction * 100
-}
   if (spinfunction <= 1) {
     hero5pack1 = 1
     spinfunction = 0
@@ -541,6 +540,7 @@ if (timer4 >= 10) {
 </div>
     `;
   }
+}
 }
 function poker() {
   if (PokerTimer >= 2) {
