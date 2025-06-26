@@ -7,7 +7,7 @@ var timer2 = 0;
 var timer3 = 0;
 var timer4 = 0;
 var PokerTimer = 0;
-var herotimer = 0;
+var heroTimer = 0;
 var heropacktimer2 = 0;
 var heropacktimer3 = 0;
 var hero1pack1 = 0;
@@ -66,15 +66,15 @@ var rewardhero15 = 0;
  Main code
 ****************************/
 function start() {
-Cash = Cash + 9999999;
-console.log(Cash);
-money.innerHTML = "$" + Cash;
+  Cash = Cash + 9999999;
+  console.log(Cash);
+  money.innerHTML = "$" + Cash;
 }
 
 
 //timerintervals
 let intervalID = setInterval(() => {
-  if (truechecking == 1 || herotimer == 1 || heropacktimer2 == 1 || heropacktimer3 == 1 || hero1pack1 == 1 || hero2pack1 == 1 || hero3pack1 == 1) {
+  if (truechecking == 1 || heroTimer == 1 || heropacktimer2 == 1 || heropacktimer3 == 1 || hero1pack1 == 1 || hero2pack1 == 1 || hero3pack1 == 1) {
     timeRenting();
   }
 }, 1000);
@@ -82,11 +82,11 @@ let intervalID = setInterval(() => {
  Functions
 ****************************/
 function timeRenting() {
-    if (truechecking == 1 && PokerTimer == 1) {
-        timer1 = timer1 + 1
-        console.log(timer1,"second")
-    }
-if (timer1 >= 30) {
+  if (truechecking == 1 && PokerTimer == 1) {
+    timer1 = timer1 + 1
+    console.log(timer1, "second")
+  }
+  if (timer1 >= 30) {
     truechecking = 0;
     PokerTimer = 0;
     timer1 = 0
@@ -94,71 +94,71 @@ if (timer1 >= 30) {
     Cash = Cash + 25
     money.innerHTML = "$" + Cash;
   }
-if (hero1pack1 == 1) {
-  hero1battletimer = hero1battletimer + 1
-}
-if (hero1battletimer >= 300) {
-  rewardhero1 = Math.random()
-  rewardhero1 = rewardhero1 * 100
-  if (hero3ability == 1 && hero1abilitychecker == 1) {
-    rewardhero1 = rewardhero1 * 1.1
-    hero1abilitychecker = 0
+  if (hero1pack1 == 1) {
+    hero1battletimer = hero1battletimer + 1
   }
-  if (rewardhero1 >= 50) {
-    Cash = Cash + 200
-     money.innerHTML = "$" + Cash;
+  if (hero1battletimer >= 300) {
+    rewardhero1 = Math.random()
+    rewardhero1 = rewardhero1 * 100
+    if (hero3ability == 1 && hero1abilitychecker == 1) {
+      rewardhero1 = rewardhero1 * 1.1
+      hero1abilitychecker = 0
+    }
+    if (rewardhero1 >= 50) {
+      Cash = Cash + 200
+      money.innerHTML = "$" + Cash;
+    }
+    hero1battletimer = 0
   }
-hero1battletimer = 0
-}
-if (hero2pack1 == 1) {
-  hero2battletimer = hero2battletimer + 1
-}
-if (hero2battletimer >= 300) {
-  rewardhero2 = Math.random()
-  rewardhero2 = rewardhero2 * 100
-  if (rewardhero2 <= 40 && rewardhero2 > 10) {
-    Cash = Cash + 150
-     money.innerHTML = "$" + Cash;
+  if (hero2pack1 == 1) {
+    hero2battletimer = hero2battletimer + 1
   }
-  if (rewardhero2 <= 10) {
-   Cash = Cash + 300
-    money.innerHTML = "$" + Cash;
+  if (hero2battletimer >= 300) {
+    rewardhero2 = Math.random()
+    rewardhero2 = rewardhero2 * 100
+    if (rewardhero2 <= 40 && rewardhero2 > 10) {
+      Cash = Cash + 150
+      money.innerHTML = "$" + Cash;
+    }
+    if (rewardhero2 <= 10) {
+      Cash = Cash + 300
+      money.innerHTML = "$" + Cash;
+    }
+    hero2battletimer = 0
   }
-hero2battletimer = 0
-}
-if (hero3pack1 == 1) {
-  hero3battletimer = hero3battletimer + 1
-}
-if (hero3battletimer >= 900) {
-hero3ability = 1
-hero3battletimer = 0
-hero1abilitychecker = 1
-}
-if (hero4pack1 == 1) {
-  hero4battletimer = hero4battletimer + 1
-}
-if (hero4battletimer >= 900) {
-Cash = Cash + 1500
-}
-if (hero5pack1 == 1) {
-  hero5battletimer = hero5battletimer + 1
-}
-if (hero5battletimer >= 300) {
-  rewardhero5 = Math.random()
-  rewardhero5 = rewardhero5 * 100
-  if (rewardhero5 <= 10) {
-    Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+  if (hero3pack1 == 1) {
+    hero3battletimer = hero3battletimer + 1
   }
-hero5battletimer = 0
-}
-if (hero1pack2 == 1) {
-  hero6battletimer = hero6battletimer + 1
-}
-if (hero6battletimer >= 300) {
+  if (hero3battletimer >= 900) {
+    hero3ability = 1
+    hero3battletimer = 0
+    hero1abilitychecker = 1
+  }
+  if (hero4pack1 == 1) {
+    hero4battletimer = hero4battletimer + 1
+  }
+  if (hero4battletimer >= 900) {
+    Cash = Cash + 1500
+  }
+  if (hero5pack1 == 1) {
+    hero5battletimer = hero5battletimer + 1
+  }
+  if (hero5battletimer >= 300) {
+    rewardhero5 = Math.random()
+    rewardhero5 = rewardhero5 * 100
+    if (rewardhero5 <= 10) {
+      Cash = Cash + 2000
+      money.innerHTML = "$" + Cash;
+    }
+    hero5battletimer = 0
+  }
+  if (hero1pack2 == 1) {
+    hero6battletimer = hero6battletimer + 1
+  }
+  if (hero6battletimer >= 300) {
     Cash = Cash + 700
   }
-hero6battletimer = 0
+  hero6battletimer = 0
 }
 if (hero2pack2 == 1) {
   hero7battletimer = hero7battletimer + 1
@@ -168,9 +168,9 @@ if (hero7battletimer >= 300) {
   rewardhero7 = rewardhero7 * 100
   if (rewardhero7 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero7battletimer = 0
+  hero7battletimer = 0
 }
 if (hero3pack2 == 1) {
   hero8battletimer = hero8battletimer + 1
@@ -180,9 +180,9 @@ if (hero8battletimer >= 300) {
   rewardhero8 = rewardhero8 * 100
   if (rewardhero8 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero8battletimer = 0
+  hero8battletimer = 0
 }
 if (hero4pack2 == 1) {
   hero9battletimer = hero9battletimer + 1
@@ -192,9 +192,9 @@ if (hero9battletimer >= 300) {
   rewardhero9 = rewardhero9 * 100
   if (rewardhero9 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero9battletimer = 0
+  hero9battletimer = 0
 }
 if (hero5pack2 == 1) {
   hero10battletimer = hero10battletimer + 1
@@ -204,9 +204,9 @@ if (hero10battletimer >= 300) {
   rewardhero10 = rewardhero10 * 100
   if (rewardhero10 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero10battletimer = 0
+  hero10battletimer = 0
 }
 if (hero1pack3 == 1) {
   hero10battletimer = hero10battletimer + 1
@@ -216,9 +216,9 @@ if (hero11battletimer >= 300) {
   rewardhero11 = rewardhero11 * 100
   if (rewardhero11 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero11battletimer = 0
+  hero11battletimer = 0
 }
 if (hero2pack3 == 1) {
   hero10battletimer = hero10battletimer + 1
@@ -228,9 +228,9 @@ if (hero12battletimer >= 300) {
   rewardhero12 = rewardhero12 * 100
   if (rewardhero12 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero12battletimer = 0
+  hero12battletimer = 0
 }
 if (hero3pack3 == 1) {
   hero13battletimer = hero13battletimer + 1
@@ -240,9 +240,9 @@ if (hero13battletimer >= 300) {
   rewardhero13 = rewardhero13 * 100
   if (rewardhero13 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero13battletimer = 0
+  hero13battletimer = 0
 }
 if (hero1pack3 == 1) {
   hero10battletimer = hero10battletimer + 1
@@ -252,9 +252,9 @@ if (hero14battletimer >= 300) {
   rewardhero14 = rewardhero14 * 100
   if (rewardhero14 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero14battletimer = 0
+  hero14battletimer = 0
 }
 if (hero1pack3 == 1) {
   hero10battletimer = hero10battletimer + 1
@@ -264,26 +264,26 @@ if (hero15battletimer >= 300) {
   rewardhero15 = rewardhero15 * 100
   if (rewardhero15 <= 10) {
     Cash = Cash + 2000
-     money.innerHTML = "$" + Cash;
+    money.innerHTML = "$" + Cash;
   }
-hero15battletimer = 0
+  hero15battletimer = 0
 }
-     if (herotimer >= 1) {
-        timer2 = timer2 + 1
-        console.log("test seconds", timer2);
-    }
+if (heroTimer == 1) {
+  timer2 = timer2 + 1
+  console.log("test seconds", timer2);
+}
 if (timer2 >= 1) {
-    herotimer = 0;
-    timer2 = 0
-    console.log("1 day passed. Rental ended.");
-    console.log("Badge collected: Grassless life")
-    spinfunction = spinfunction * 100
+  heroTimer = 0;
+  timer2 = 0
+  console.log("1 day passed. Rental ended.");
+  console.log("Badge collected: Grassless life")
+  spinfunction = spinfunction * 100
 
-    if (spinfunction <= 1) {
-        hero5pack1 = 1
-        spinfunction = 0
-         console.log("You got the 1% chance hero Hero 5 CONGRATULATIONS");
-document.getElementById("CupcakeGirl").innerHTML = `
+  if (spinfunction <= 1) {
+    hero5pack1 = 1
+    spinfunction = 0
+    console.log("You got the 1% chance hero Hero 5 CONGRATULATIONS");
+    document.getElementById("CupcakeGirl").innerHTML = `
 <div id="Hero" style="display;">
   <img src="CupcakeGirl.png" width="200" alt="CupcakeGirl">
   <div class="dropdown">
@@ -294,12 +294,12 @@ document.getElementById("CupcakeGirl").innerHTML = `
   </div>
 </div>
     `;
-    }
-      if (spinfunction > 1 && spinfunction <= 6) {
-        hero4pack1 = 1
-        spinfunction = 0
-         console.log("You got the 5% chance Hero 4");
-document.getElementById("PhantomStranger").innerHTML = `
+  }
+  if (spinfunction > 1 && spinfunction <= 6) {
+    hero4pack1 = 1
+    spinfunction = 0
+    console.log("You got the 5% chance Hero 4");
+    document.getElementById("PhantomStranger").innerHTML = `
 <div id="Hero" style="display;">
   <img src="PhantomStranger.png" width="200" alt="PhantomStranger">
   <div class="dropdown">
@@ -310,12 +310,12 @@ document.getElementById("PhantomStranger").innerHTML = `
   </div>
 </div>
     `;
-    }
-      if (spinfunction > 6 && spinfunction <= 16) {
-        hero3pack1 = 1
-        spinfunction = 0
-         console.log("You got the 10% chance Hero 3");
-document.getElementById("TheSpectre").innerHTML = `
+  }
+  if (spinfunction > 6 && spinfunction <= 16) {
+    hero3pack1 = 1
+    spinfunction = 0
+    console.log("You got the 10% chance Hero 3");
+    document.getElementById("TheSpectre").innerHTML = `
 <div id="Hero" style="display;">
   <img src="TheSpectre.png" width="200" alt="TheSpectre">
   <div class="dropdown">
@@ -326,12 +326,12 @@ document.getElementById("TheSpectre").innerHTML = `
   </div>
 </div>
     `;
-    }
+  }
   if (spinfunction > 16 && spinfunction <= 40) {
-        hero2pack1 = 1
-        spinfunction = 0
-         console.log("You got the 24% chance Hero 2");
-document.getElementById("Wolverine").innerHTML = `
+    hero2pack1 = 1
+    spinfunction = 0
+    console.log("You got the 24% chance Hero 2");
+    document.getElementById("Wolverine").innerHTML = `
 <div id="Hero" style="display;">
   <img src="Wolverine.png" width="200" alt="Wolverine">
   <div class="dropdown">
@@ -342,8 +342,8 @@ document.getElementById("Wolverine").innerHTML = `
   </div>
 </div>
     `;
-    }
-    if (spinfunction > 40) {
+  }
+  if (spinfunction > 40) {
     hero1pack1 = 1
     spinfunction = 0;
     console.log("You got the 60% chance Hero 1");
@@ -359,23 +359,23 @@ document.getElementById("Wolverine").innerHTML = `
   </div>
 </div>
     `;
+  }
 }
+if (heropacktimer2 >= 1) {
+  timer3 = timer3 + 1
+  console.log("pack 2", timer3);
 }
-    if (heropacktimer2 >= 1) {
-        timer3 = timer3 + 1
-        console.log("pack 2", timer3);
-    }
-    if (timer3 >= 10) {
-    heropacktimer2 = 0;
-    timer3 = 0
-    console.log("1 day passed. Rental ended.");
-    console.log("Badge collected: Grassless life")
-    spinfunction2 = spinfunction2 * 100
-    if (spinfunction2 <= 1) {
-        hero5pack2 = hero5pack2 + 1
-        spinfunction2 = 0
-         console.log("You got the 1% chance Hero 5 pack 2 CONGRATULATIONS");
-document.getElementById("EDP456").innerHTML = `
+if (timer3 >= 10) {
+  heropacktimer2 = 0;
+  timer3 = 0
+  console.log("1 day passed. Rental ended.");
+  console.log("Badge collected: Grassless life")
+  spinfunction2 = spinfunction2 * 100
+  if (spinfunction2 <= 1) {
+    hero5pack2 = hero5pack2 + 1
+    spinfunction2 = 0
+    console.log("You got the 1% chance Hero 5 pack 2 CONGRATULATIONS");
+    document.getElementById("EDP456").innerHTML = `
 <div id="Hero" style="display;">
   <img src="EDP456.png" width="200" alt="EDP456">
   <div class="dropdown">
@@ -386,12 +386,12 @@ document.getElementById("EDP456").innerHTML = `
   </div>
 </div>
     `;
-    }
-      if (spinfunction2 > 1 && spinfunction2 <= 6) {
-        hero4pack2 = hero4pack2 + 1
-        spinfunction2 = 0
-         console.log("You got the 5% chance Hero 4 pack 2");
-document.getElementById("DrStrange").innerHTML = `
+  }
+  if (spinfunction2 > 1 && spinfunction2 <= 6) {
+    hero4pack2 = hero4pack2 + 1
+    spinfunction2 = 0
+    console.log("You got the 5% chance Hero 4 pack 2");
+    document.getElementById("DrStrange").innerHTML = `
 <div id="Hero" style="display;">
   <img src="DrStrange.png" width="200" alt="DrStrange">
   <div class="dropdown">
@@ -402,12 +402,12 @@ document.getElementById("DrStrange").innerHTML = `
   </div>
 </div>
     `;
-    }
-      if (spinfunction2 > 6 && spinfunction2 <= 16) {
-        hero3pack2 = hero3pack2 + 1
-        spinfunction2 = 0
-         console.log("You got the 10% chance Hero 3 Pack 2");
-document.getElementById("DrFate").innerHTML = `
+  }
+  if (spinfunction2 > 6 && spinfunction2 <= 16) {
+    hero3pack2 = hero3pack2 + 1
+    spinfunction2 = 0
+    console.log("You got the 10% chance Hero 3 Pack 2");
+    document.getElementById("DrFate").innerHTML = `
 <div id="Hero" style="display;">
   <img src="DrFate.png" width="200" alt="DrFate">
   <div class="dropdown">
@@ -418,12 +418,12 @@ document.getElementById("DrFate").innerHTML = `
   </div>
 </div>
     `;
-    }
+  }
   if (spinfunction2 > 16 && spinfunction2 <= 40) {
-        hero2pack2 = hero2pack2 + 1
-        spinfunction2 = 0
-         console.log("You got the 24% chance Hero 2 pack 2");
-document.getElementById("Sentry").innerHTML = `
+    hero2pack2 = hero2pack2 + 1
+    spinfunction2 = 0
+    console.log("You got the 24% chance Hero 2 pack 2");
+    document.getElementById("Sentry").innerHTML = `
 <div id="Hero" style="display;">
   <img src="Sentry.png" width="200" alt="Sentry">
   <div class="dropdown">
@@ -434,12 +434,12 @@ document.getElementById("Sentry").innerHTML = `
   </div>
 </div>
     `;
-    }
-      if (spinfunction2 > 40) {
-        hero1pack2 = hero1pack2 + 1
-        spinfunction2 = 0
-        console.log("You got the 60% chance Hero 1 pack 2");
-document.getElementById("Cyborg").innerHTML = `
+  }
+  if (spinfunction2 > 40) {
+    hero1pack2 = hero1pack2 + 1
+    spinfunction2 = 0
+    console.log("You got the 60% chance Hero 1 pack 2");
+    document.getElementById("Cyborg").innerHTML = `
 <div id="Hero" style="display;">
   <img src="Cyborg.png" width="200" alt="Cyborg">
   <div class="dropdown">
@@ -450,23 +450,23 @@ document.getElementById("Cyborg").innerHTML = `
   </div>
 </div>
     `;
-    }
+  }
 }
- if (heropacktimer3 >= 1) {
-        timer4 = timer4 + 1
-        console.log("hero second", timer4);
-    }
-    if (timer4 >= 10) {
-    heropacktimer3 = 0;
-    timer4 = 0
-    console.log("1 day passed. Rental ended.");
-    console.log("Badge collected: Grassless life")
-    spinfunction3 = spinfunction3 * 100
-    if (spinfunction3 <= 0.5) {
-        hero5pack3 = hero5pack3 + 1
-        spinfunction3 = 0
-         console.log("You got the 0.5% chance Hero 5 pack 3 CONGRATULATIONS");
-document.getElementById("JFK").innerHTML = `
+if (heropacktimer3 >= 1) {
+  timer4 = timer4 + 1
+  console.log("hero second", timer4);
+}
+if (timer4 >= 10) {
+  heropacktimer3 = 0;
+  timer4 = 0
+  console.log("1 day passed. Rental ended.");
+  console.log("Badge collected: Grassless life")
+  spinfunction3 = spinfunction3 * 100
+  if (spinfunction3 <= 0.5) {
+    hero5pack3 = hero5pack3 + 1
+    spinfunction3 = 0
+    console.log("You got the 0.5% chance Hero 5 pack 3 CONGRATULATIONS");
+    document.getElementById("JFK").innerHTML = `
 <div id="Hero" style="display;">
   <img src="JFK.png" width="200" alt="JFk">
   <div class="dropdown">
@@ -477,12 +477,12 @@ document.getElementById("JFK").innerHTML = `
   </div>
 </div>
     `;
-    }
-      if (spinfunction3 > 0.5 && spinfunction3 <= 6.5) {
-        hero4pack3 = hero4pack3 + 1
-        spinfunction3 = 0
-         console.log("You got the 5% chance Hero 4 pack 3");
-document.getElementById("LeeHarvey").innerHTML = `
+  }
+  if (spinfunction3 > 0.5 && spinfunction3 <= 6.5) {
+    hero4pack3 = hero4pack3 + 1
+    spinfunction3 = 0
+    console.log("You got the 5% chance Hero 4 pack 3");
+    document.getElementById("LeeHarvey").innerHTML = `
 <div id="Hero" style="display;">
   <img src="LeeHarvey.png" width="200" alt="LeeHarvey">
   <div class="dropdown">
@@ -493,12 +493,12 @@ document.getElementById("LeeHarvey").innerHTML = `
   </div>
 </div>
     `;
-    }
-      if (spinfunction3 > 6.5 && spinfunction3 <= 16) {
-        hero3pack3 = hero3pack3 + 1
-        spinfunction3 = 0
-         console.log("You got the 9.5% chance Hero 3 Pack 3");
- document.getElementById("BatMan").innerHTML = `
+  }
+  if (spinfunction3 > 6.5 && spinfunction3 <= 16) {
+    hero3pack3 = hero3pack3 + 1
+    spinfunction3 = 0
+    console.log("You got the 9.5% chance Hero 3 Pack 3");
+    document.getElementById("BatMan").innerHTML = `
 <div id="Hero" style="display;">
   <img src="BatMan.png" width="200" alt="BatMan">
   <div class="dropdown">
@@ -509,12 +509,12 @@ document.getElementById("LeeHarvey").innerHTML = `
   </div>
 </div>
     `;
-    }
+  }
   if (spinfunction3 > 16 && spinfunction3 <= 31) {
-        hero2pack3 = hero2pack3 + 1
-        spinfunction3 = 0
-         console.log("You got the 15% chance Hero 2 pack 3");
-document.getElementById("Coby").innerHTML = `
+    hero2pack3 = hero2pack3 + 1
+    spinfunction3 = 0
+    console.log("You got the 15% chance Hero 2 pack 3");
+    document.getElementById("Coby").innerHTML = `
 <div id="Hero" style="display;">
   <img src="Coby.png" width="200" alt="Coby">
   <div class="dropdown">
@@ -525,12 +525,12 @@ document.getElementById("Coby").innerHTML = `
   </div>
 </div>
     `;
-    }
-      if (spinfunction3 > 31) {
-        hero1pack3 = hero1pack3 + 1
-        spinfunction3 = 0
-        console.log("You got the 69% chance Hero 1 pack 3");
-document.getElementById("Jahlayze").innerHTML = `
+  }
+  if (spinfunction3 > 31) {
+    hero1pack3 = hero1pack3 + 1
+    spinfunction3 = 0
+    console.log("You got the 69% chance Hero 1 pack 3");
+    document.getElementById("Jahlayze").innerHTML = `
 <div id="Hero" style="display;">
   <img src="Jahlayze.png" width="200" alt="Jahlayze">
   <div class="dropdown">
@@ -541,76 +541,76 @@ document.getElementById("Jahlayze").innerHTML = `
   </div>
 </div>
     `;
-    }
+  }
 }
 function poker() {
-    if (PokerTimer >= 2) {
-        truechecking = 0;
-        PokerTimer = 0;
-        console.log("you can only rent one item at a time")
-        timer1 = 0;
-    }
-    if (Cash >= 20 && PokerTimer <= 1) {
-        intervalID = 0;
-        truechecking = truechecking + 1
+  if (PokerTimer >= 2) {
+    truechecking = 0;
+    PokerTimer = 0;
+    console.log("you can only rent one item at a time")
+    timer1 = 0;
+  }
+  if (Cash >= 20 && PokerTimer <= 1) {
+    intervalID = 0;
+    truechecking = truechecking + 1
     PokerTimer = PokerTimer + 1
     Cash = Cash - 20
     console.log("thank you for your purchase you may buy again after 30 seconds")
     money.innerHTML = "$" + Cash;
-    } else {
-        console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
-    }
+  } else {
+    console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
+  }
 }
 function heropack1function() {
-    if (herotimer > 1) {
-        herotimer = 0;
-        console.log("you can only rent one of this hero at a time")
-        timer2 = 0;
-    }
-    if (Cash >= 500 && herotimer <= 1) {
-        intervalID = 0;
-    herotimer = herotimer + 1
+  if (heroTimer > 1) {
+    heroTimer = 0;
+    console.log("you can only rent one of this hero at a time")
+    timer2 = 0;
+  }
+  if (Cash >= 500 && heroTimer <= 1) {
+    intervalID = 0;
+    heroTimer = heroTimer + 1
     Cash = Cash - 500
     console.log("you have bought hero pack 1")
     spinfunction = Math.random();
     money.innerHTML = "$" + Cash;
-    } else {
-        console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
-    }
+  } else {
+    console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
+  }
 }
 function heropack2function() {
-    if (heropacktimer2 > 1) {
-        heropacktimer2 = 0;
-        console.log("you can only rent one of this hero at a time")
-        timer3 = 0;
-    }
-    if (Cash >= 5000 && heropacktimer2 <= 1) {
-        intervalID = 0;
+  if (heropacktimer2 > 1) {
+    heropacktimer2 = 0;
+    console.log("you can only rent one of this hero at a time")
+    timer3 = 0;
+  }
+  if (Cash >= 5000 && heropacktimer2 <= 1) {
+    intervalID = 0;
     heropacktimer2 = heropacktimer2 + 1
     Cash = Cash - 5000
     console.log("you have bought hero pack 2")
     spinfunction2 = Math.random();
     money.innerHTML = "$" + Cash;
-    } else {
-        console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
-    }
+  } else {
+    console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
+  }
 }
 function heropack3function() {
-    if (heropacktimer3 > 1) {
-        heropacktimer3 = 0;
-        console.log("you can only rent one of this hero at a time")
-        timer3 = 0;
-    }
-    if (Cash >= 5000 && heropacktimer3 <= 1) {
-        intervalID = 0;
+  if (heropacktimer3 > 1) {
+    heropacktimer3 = 0;
+    console.log("you can only rent one of this hero at a time")
+    timer3 = 0;
+  }
+  if (Cash >= 5000 && heropacktimer3 <= 1) {
+    intervalID = 0;
     heropacktimer3 = heropacktimer3 + 1
     Cash = Cash - 100000
     console.log("you have bought hero pack 3")
     spinfunction3 = Math.random();
     money.innerHTML = "$" + Cash;
-    } else {
-        console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
-    }
+  } else {
+    console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
+  }
 }
 function toggleDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
