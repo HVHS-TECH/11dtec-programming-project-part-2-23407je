@@ -271,7 +271,7 @@ if (heroTimer == 1) {
   timer2 = timer2 + 1
   console.log("test seconds", timer2);
 }
-if (timer2 >= 1) {
+if (timer2 >= 10) {
   heroTimer = 0;
   timer2 = 0
   console.log("1 day passed. Rental ended.");
