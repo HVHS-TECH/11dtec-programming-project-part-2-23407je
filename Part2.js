@@ -74,7 +74,7 @@ function start() {
 
 //timerintervals
 let intervalID = setInterval(() => {
-  if (truechecking == 1 || heroTimer == 1 || heropacktimer2 == 1 || heropacktimer3 == 1 || hero1pack1 == 1 || hero2pack1 == 1 || hero3pack1 == 1) {
+  if (truechecking == 1 || heroTimer == 1 || heropacktimer2 == 1 || heropacktimer3 == 1) {
     timeRenting();
   }
 }, 1000);
