@@ -461,7 +461,7 @@ if (timer3 >= 10) {
 if (heropacktimer3 >= 1) {
   timer4 = timer4 + 1
   console.log("hero second", timer4);
-    pack3.innerHTML = "pack 3 seconds: ", + timer4 ;
+    pack3.innerHTML = "pack 3 seconds: ", + timer4;
 }
 if (timer4 >= 11) {
   timer4 = 0
