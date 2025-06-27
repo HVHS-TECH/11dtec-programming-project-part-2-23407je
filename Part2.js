@@ -475,9 +475,9 @@ if (heropacktimer3 >= 1) {
 if (timer4text >= 11) {
   timer4 = 0
    pack3.innerHTML = "";
-    heropacktimer3 = 0;
 }
 if (timer4 >= 10) {
+      heropacktimer3 = 0;
     timer4 = 0
   console.log("1 day passed. Rental ended.");
   console.log("Badge collected: Grassless life")
