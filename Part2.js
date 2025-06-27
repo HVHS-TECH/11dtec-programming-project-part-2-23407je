@@ -271,12 +271,16 @@ if (heroTimer == 1) {
   timer2 = timer2 + 1
   console.log("test seconds", timer2);
 }
+if (timer2 >= 11) {
+  timer2 = 0
+   pack1.innerHTML = "";
+}
 if (timer2 >= 10) {
   heroTimer = 0;
-  timer2 = 0
   console.log("1 day passed. Rental ended.");
   console.log("Badge collected: Grassless life")
   spinfunction = spinfunction * 100
+     pack1.innerHTML = "Pack 1 opened";
   if (spinfunction <= 1) {
     hero5pack1 = 1
     spinfunction = 0
@@ -363,12 +367,16 @@ if (heropacktimer2 >= 1) {
   timer3 = timer3 + 1
   console.log("pack 2", timer3);
 }
+if (timer3 >= 11) {
+  timer3 = 0
+   pack2.innerHTML = "";
+}
 if (timer3 >= 10) {
   heropacktimer2 = 0;
-  timer3 = 0
   console.log("1 day passed. Rental ended.");
   console.log("Badge collected: Grassless life")
   spinfunction2 = spinfunction2 * 100
+     pack2.innerHTML = "Pack 2 opened";
   if (spinfunction2 <= 1) {
     hero5pack2 = hero5pack2 + 1
     spinfunction2 = 0
@@ -453,13 +461,18 @@ if (timer3 >= 10) {
 if (heropacktimer3 >= 1) {
   timer4 = timer4 + 1
   console.log("hero second", timer4);
+    pack3.innerHTML = "pack 3 seconds: ", + timer4 ;
+}
+if (timer4 >= 11) {
+  timer4 = 0
+   pack3.innerHTML = "";
 }
 if (timer4 >= 10) {
   heropacktimer3 = 0;
-  timer4 = 0
   console.log("1 day passed. Rental ended.");
   console.log("Badge collected: Grassless life")
   spinfunction3 = spinfunction3 * 100
+     pack3.innerHTML = "Pack 3 opened";
   if (spinfunction3 <= 0.5) {
     hero5pack3 = hero5pack3 + 1
     spinfunction3 = 0
@@ -573,6 +586,7 @@ function heropack1function() {
     console.log("you have bought hero pack 1")
     spinfunction = Math.random();
     money.innerHTML = "$" + Cash;
+    timer2 = 0;
   } else {
     console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
   }
@@ -590,6 +604,7 @@ function heropack2function() {
     console.log("you have bought hero pack 2")
     spinfunction2 = Math.random();
     money.innerHTML = "$" + Cash;
+    timer3 = 0;
   } else {
     console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
   }
@@ -598,7 +613,7 @@ function heropack3function() {
   if (heropacktimer3 > 1) {
     heropacktimer3 = 0;
     console.log("you can only rent one of this hero at a time")
-    timer3 = 0;
+    timer4 = 0;
   }
   if (Cash >= 5000 && heropacktimer3 <= 1) {
     intervalID = 0;
@@ -607,6 +622,7 @@ function heropack3function() {
     console.log("you have bought hero pack 3")
     spinfunction3 = Math.random();
     money.innerHTML = "$" + Cash;
+    timer4 = 0;
   } else {
     console.log("You are to broke to buy it like how you are to broke to afford food. Get a job")
   }
