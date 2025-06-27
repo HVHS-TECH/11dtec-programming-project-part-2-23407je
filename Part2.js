@@ -472,7 +472,7 @@ if (heropacktimer3 >= 1) {
 }
 if (timer4 >= 11) {
   timer4 = 0
-   pack3.innerHTML = "";
+   pack3.innerHTML = "" ;
     heropacktimer3 = 0;
 }
 if (timer4 >= 10) {
