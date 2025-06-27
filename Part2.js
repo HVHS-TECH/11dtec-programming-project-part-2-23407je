@@ -2,6 +2,7 @@
 Rental Josh 16/05/25
 ****************************/
 console.log("Welcome to the part 2 project");
+var countdown = 0;
 var timer1 = 0;
 var timer2 = 0;
 var timer3 = 0;
@@ -270,6 +271,8 @@ if (hero15battletimer >= 300) {
 if (heroTimer == 1) {
   timer2 = timer2 + 1
   console.log("test seconds", timer2);
+  countdown = 10 - timer2
+     pack1.innerHTML = countdown;
 }
 if (timer2 >= 11) {
   timer2 = 0
