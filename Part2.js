@@ -276,7 +276,7 @@ if (heroTimer == 1) {
 }
 if (timer2 >= 11) {
   timer2 = 0
-   pack1.innerHTML = ;
+   pack1.innerHTML = formattedpath;
 }
 if (timer2 >= 10) {
   heroTimer = 0;
