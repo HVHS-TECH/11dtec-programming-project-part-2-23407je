@@ -467,16 +467,18 @@ if (timer3 >= 10) {
 }
 if (heropacktimer3 >= 1) {
   timer4 = timer4 + 1
+    timer4text = timer4text + 1
   console.log("hero second", timer4);
   countdown = 10 - timer4
     pack3.innerHTML = countdown;
 }
-if (timer4 >= 11) {
+if (timer4text >= 11) {
   timer4 = 0
    pack3.innerHTML = "";
     heropacktimer3 = 0;
 }
 if (timer4 >= 10) {
+    timer4 = 0
   console.log("1 day passed. Rental ended.");
   console.log("Badge collected: Grassless life")
   spinfunction3 = spinfunction3 * 100
