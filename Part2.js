@@ -369,11 +369,13 @@ if (timer2 >= 10) {
 if (heropacktimer2 >= 1) {
   timer3 = timer3 + 1
   console.log("pack 2", timer3);
+  countdown2 = 10 - timer3
+     pack1.innerHTML = countdown2;
 }
 if (timer3 >= 11) {
   timer3 = 0
-   pack2.innerHTML = "";
       heropacktimer2 = 0;
+         pack2.innerHTML = "";
 }
 if (timer3 >= 10) {
   heropacktimer2 = 0;
