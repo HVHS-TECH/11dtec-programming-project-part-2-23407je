@@ -276,10 +276,10 @@ if (heroTimer == 1) {
 }
 if (timer2 >= 11) {
   timer2 = 0
-   pack1.innerHTML = formattedpath;
+    heroTimer = 0;
+   pack1.innerHTML = "";
 }
 if (timer2 >= 10) {
-  heroTimer = 0;
   console.log("1 day passed. Rental ended.");
   console.log("Badge collected: Grassless life")
   spinfunction = spinfunction * 100
@@ -373,6 +373,7 @@ if (heropacktimer2 >= 1) {
 if (timer3 >= 11) {
   timer3 = 0
    pack2.innerHTML = "";
+      heropacktimer2 = 0;
 }
 if (timer3 >= 10) {
   heropacktimer2 = 0;
@@ -464,11 +465,13 @@ if (timer3 >= 10) {
 if (heropacktimer3 >= 1) {
   timer4 = timer4 + 1
   console.log("hero second", timer4);
-    pack3.innerHTML = "pack 3 seconds: ", + timer4;
+  countdown = 10 - timer4
+    pack3.innerHTML = countdown;
 }
 if (timer4 >= 11) {
   timer4 = 0
    pack3.innerHTML = "";
+    heropacktimer3 = 0;
 }
 if (timer4 >= 10) {
   heropacktimer3 = 0;
