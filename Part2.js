@@ -2,6 +2,7 @@
 Rental Josh 16/05/25
 ****************************/
 console.log("Welcome to the part 2 project");
+var hi = 0;
 var countdown = 0;
 var countdown2 = 0;
 var countdown3 = 0;
